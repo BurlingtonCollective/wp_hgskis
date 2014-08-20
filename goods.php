@@ -18,21 +18,23 @@ include_once('includes/header.php');
 <section>
 	<div class="container">
 		<div class="row">
+			<?php
+			$goods = new WP_Query(array('post_type'=>'good'));
+			if($goods->have_posts()): while($goods->have_posts()): $goods->the_post();
+			?>
 			<div class="col-xs-3">
-				<img class="img-responsive" src="http://placehold.it/800x800">
+				<div class="good-wrapper">
+					<a href="<?php the_permalink(); ?>">
+						<?php
+						echo types_render_field('main-image', array('class'=>'img-responsive'));
+						?>
+						<h4 style="text-align: center;"><?php the_title();?></h4>
+					</a>
+				</div>
 			</div>
-			<div class="col-xs-3">
-				<img class="img-responsive" src="http://placehold.it/800x800">
-			</div>
-			<div class="col-xs-3">
-				<img class="img-responsive" src="http://placehold.it/800x800">
-			</div>
-			<div class="col-xs-3">
-				<img class="img-responsive" src="http://placehold.it/800x800">
-			</div>
-			<div class="col-xs-3">
-				<img class="img-responsive" src="http://placehold.it/800x800">
-			</div>
+			<?php
+			endwhile; endif;
+			?>
 		</div>
 	</div>
 </section>

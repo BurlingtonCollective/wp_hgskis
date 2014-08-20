@@ -49,7 +49,7 @@ $media = new WP_Query('posts_per_page=5&paged='+$paged);
 				</ul>
 			</div>
 			<div id="sidebar" class="col-xs-3 col-xs-push-1">
-				<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/temp/ad-placeholder.png">
+				<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/vermonts-finest.jpg">
 				<h4>Categories</h4>
 				<ul class="nav nav-stacked">
 					<?php

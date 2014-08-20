@@ -26,9 +26,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 							<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/product/base.png">
 						</div>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-6" style="text-align: center;">
 						<h5 class="view-label">Profile View</h5>
-						<!-- <img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/product/profile.png"> -->
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/product/profile.png" style="margin: 20px auto 0;">
 					</div>
 				</div>
 			</div>

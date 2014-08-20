@@ -65,10 +65,10 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<h3>Featured Products <small class="pull-right"><a href="javascript:void(0)">view all products</a></small></h3>
 					<div class="row">
 						<div class="col-xs-6">
-							<img class="img-responsive" src="http://placehold.it/800x600&amp;text=Aspect+2:3+-+min-width:+800">
+							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/Introducing-the-2015-stinger.jpg">
 						</div>
 						<div class="col-xs-6">
-							<img class="img-responsive" src="http://placehold.it/800x600&amp;text=Aspect+2:3+-+min-width:+800">
+							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/Classic-Hoodie.jpg">
 						</div>
 					</div>
 				</div>
@@ -78,10 +78,10 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<h3>Latest News <small class="pull-right"><a href="javascript:void(0)">view all news</a></small></h3>
 					<div class="row">
 						<div class="col-xs-6">
-							<img class="img-responsive" src="http://placehold.it/800x600&amp;text=Aspect+2:3+-+min-width:+800">
+							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/IF3-announced.jpg">
 						</div>
 						<div class="col-xs-6">
-							<img class="img-responsive" src="http://placehold.it/800x600&amp;text=Aspect+2:3+-+min-width:+800">
+							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/Cole-season-edit.jpg">
 						</div>
 					</div>
 				</div>
