@@ -1,24 +1,49 @@
 <?php
+/*
+Template Name: Home Page
+*/
 include_once('includes/header.php');
+if (have_posts()) : while (have_posts()) : the_post();
+  $slideshowImagesRaw = types_render_field( "slideshow-image", array('output'=>'raw'));
+  $slideshowImages = explode(' ', $slideshowImagesRaw);
 ?>
 <section id="banner">
 	<div id="banner-carousel" class="carousel slide">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
-	    <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
-	    <li data-target="#banner-carousel" data-slide-to="1"></li>
+	  	<?php
+	  	$indicatorActive = true;
+	  	$indicatorIndex = 0;
+	  	while($indicatorIndex <= count($slideshowImages)-1):
+	  	?>
+	    <li data-target="#banner-carousel" data-slide-to="<?= $indicatorIndex; ?>" class="<?= $indicatorActive ? 'active' : '';?>"></li>
+	    <?php
+	    $indicatorIndex++;
+	    $indicatorActive = false;
+	    endwhile;
+	    ?>
 	  </ol>
 
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner">
-	    <div class="item active">
-	      <img src="<?= get_template_directory_uri(); ?>/images/temp/banner-img.png" alt="hg skis" class="img-responsive" style="margin: 0 auto;">
+	  	<?php
+	  	$slideActive = true;
+	  	$slideIndex = 0;
+	  	while($slideIndex <= count($slideshowImages)-1):
+	  	?>
+	    <div class="item <?= $slideActive ? 'active' : ''; ?>">
+	      <?= types_render_field("slideshow-image", array('index'=>$slideIndex)); ?>
 	    </div>
-	    <div class="item">
+	    <!-- <div class="item">
 	    	<div class="video-wrapper" data-fitvids-target>
 	    		<iframe src="//player.vimeo.com/video/48325397" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	    	</div>
-	    </div>
+	    </div> -->
+	    <?php
+	    $slideIndex++;
+	    $slideActive = false;
+	    endwhile;
+	    ?>
 	  </div>
 
 	  <!-- Controls -->
@@ -84,5 +109,6 @@ include_once('includes/header.php');
 	</div>
 </section>
 <?php
+endwhile; endif;
 include_once('includes/footer.php');
 ?>
