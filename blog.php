@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Blog Overview Page
+Template Name: Media Page
 */
 include_once('includes/header.php');
 ?>
@@ -16,7 +16,7 @@ include_once('includes/header.php');
 					<div class="content">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="javascript:void(0)">read more ...</a></p>
-						<img class="img-responsive" src="images/temp/blog-placeholder.png">
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/temp/blog-placeholder.png">
 					</div>
 				</article>
 				<article>
@@ -27,7 +27,7 @@ include_once('includes/header.php');
 					<div class="content">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="javascript:void(0)">read more ...</a></p>
-						<img class="img-responsive" src="images/temp/blog-placeholder.png">
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/temp/blog-placeholder.png">
 					</div>
 				</article>
 				<article>
@@ -38,7 +38,7 @@ include_once('includes/header.php');
 					<div class="content">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="javascript:void(0)">read more ...</a></p>
-						<img class="img-responsive" src="images/temp/blog-placeholder.png">
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/temp/blog-placeholder.png">
 					</div>
 				</article>
 				<ul class="pager">
@@ -47,7 +47,7 @@ include_once('includes/header.php');
 				</ul>
 			</div>
 			<div id="sidebar" class="col-xs-3 col-xs-push-1">
-				<img class="img-responsive ad" src="images/temp/ad-placeholder.png">
+				<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/temp/ad-placeholder.png">
 				<h4>Cateories</h4>
 				<ul class="nav nav-stacked">
 					<li><a href="javascript:void(0)">Video</a></li>
