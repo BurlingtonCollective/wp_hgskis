@@ -1,0 +1,178 @@
+<?php
+/*
+Template Name: About Page
+*/
+include_once('includes/header.php');
+?>
+<section id="banner">
+	<img class="img-responsive" src="images/temp/banner-img-about.png" style="margin: 0 auto;">
+</section>
+<section id="about" class="heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>About</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3">
+				<img class="img-responsive" src="images/smoke-polaroid.png" style="margin: 0 auto;">
+			</div>
+			<div class="col-xs-6">
+				<p style="margin-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-xs-3">
+				<img class="img-responsive" src="images/smoke-polaroid.png" style="margin: 0 auto;">
+			</div>
+		</div>
+	</div>
+</section>
+<section id="contact" class="heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-heading">
+					<h1>Contact</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4">
+				<div class="about-inner address">
+					<div class="icon">
+						<i class="glyphicon glyphicon-map-marker"></i>
+					</div>
+					<div class="content">
+						<ul class="address">
+							<li>HG Skis</li>
+							<li>70 S. Winooski Ave #194</li>
+							<li>Burlington, VT 05401</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="about-inner">
+					<div class="icon">
+						<i class="glyphicon glyphicon-envelope"></i>
+					</div>
+					<div class="content">
+						<a href="mailto:info@hgskis.com">info@hgskis.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="about-inner">
+					<div class="icon">
+						<img class="img-responsive" src="images/sticker-icon.png">
+					</div>
+					<div class="content">
+						<span>Send us a SASE and we'll send you stickers back!</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="history" class="heading">
+	<div class="container">
+		<div class="row" class="page-heading">
+			<div class="col-xs-12">
+				<div class="page-heading">
+					<h1>History</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<p>
+					<img src="images/history-polaroids/top.png" style="float: right; margin: 0px -40px 0 0;"><img src="images/history-polaroids/middle.png" style="float: right; margin: 0px -40px 0 0;"><img src="images/history-polaroids/bottom.png" style="float: right; margin: 0px -40px 0 0;">
+					HG Skis is a freestyle ski company based in Burlington, VT. While we’ve been building and designing skis since 2006, the company was officially established in 2010. In the age of “locally grown products” and “micro-brew” ski companies, the east coast has been left without its own ski brand. As the only representatives of the east coast in the ski industry, we design, prototype, and manufacture product specifically for our terrain.<br><br>
+					In 2006 I began work on a senior project in high school. Over a five 
+					month process I built a ski press, a mold, and many of the 
+					specialized ski tools still used by the company today. 
+					Above all I built a pair of skis that I am still in love with.<br><br>
+					For my first two years of college I was in an out of other 
+					peoples’ shop space. It was not until my go-to shop told me that I wasn’t allowed back that I decided to invest in my own machines, and start a ski company. During my third year of college I befriend Connor Gaeta. Connor originally started with me to develop our first twin tip, and function as a pro.<br><br>
+					Since then, Connor has developed into a major component of 
+					the company. The two of us are very different people, but we share one major thing in common. We are crazy about skiing, and want to bring innovation to the sport in anyway possible.<br><br>
+					Currently we work out of a garage in Burlington, Vermont. We live in your neighborhood, and we are building our favorite skis for you.<br><br>
+					-Harrison G, founder of HG Skis
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="retailers" class="heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-heading">
+					<h1>Retailers</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3">
+				<img class="img-responsive" src="images/first-stop-polaroid.png">
+			</div>
+			<div class="col-xs-3">
+				<h3>First Stop Board Barn</h3>
+				<ul class="address">
+					<li>8474 Rt. 4</li>
+					<li>Killington, VT USA 05751</li>
+				</ul>
+			</div>
+			<div class="col-xs-3">
+				<img class="img-responsive" src="images/first-stop-polaroid.png">
+			</div>
+			<div class="col-xs-3">
+				<h3>First Stop Board Barn</h3>
+				<ul class="address">
+					<li>8474 Rt. 4</li>
+					<li>Killington, VT USA 05751</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="warrenty" class="heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-heading">
+					<h1>Warrenty</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-8">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<?php
+include_once('includes/footer.php');
+?>

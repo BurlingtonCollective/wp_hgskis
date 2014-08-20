@@ -1,0 +1,262 @@
+html{
+	background: @darkest-gray;
+	body{
+		background: @background;
+		position: relative;
+	}
+}
+
+header{
+	@media(min-width: @grid-float-breakpoint){
+		position: relative;
+		z-index: 5;
+		nav{
+			&#main-nav{
+				.clearfix();
+				position: relative;
+				z-index: 3;
+				background: @background url(../images/tree-pattern.png) center center repeat-x;
+				.box-shadow(0px 0px 15px 8px fade(black, 30%));
+				#mobile-collapse-target{
+					display: block!important;
+					max-width: 960px;
+				}
+				.brand{
+					position: absolute;
+					top: 0;
+					left: 50%;
+					margin-left: -78px;
+				}
+				ul.main-nav{
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					.clearfix();
+					float: left;
+					width: 50%;
+					.box-sizing(border-box);
+					&.nav-left{
+						padding-right: 66px;
+					}
+					&.nav-right{
+						padding-left: 66px;
+					}
+					li{
+						width: 33.3333333%;
+						float: left;
+						text-align: center;
+						a{
+							//192px
+							padding: 31px 7px;
+							border-bottom: 5px solid transparent;
+							display: inline-block;
+							text-align: center;
+							font-size: unit(18/@font-size-base, em);
+							text-decoration: none;
+							color: @text-color;
+							text-transform: uppercase;
+							&:hover{
+								border-color: @text-color;
+							}
+						}
+						&.active a{
+							border-color: @text-color;
+						}
+					}
+				}
+			}
+			&#sub-nav{
+				position: relative;
+				z-index: 2;
+				background: @darker-background url(../images/tree-pattern.png) 10% center repeat-x;
+				padding-top: 40px;
+				.box-shadow(0px 0px 15px 8px fade(black, 30%));
+				.nav-justified{
+					max-width: 940px;
+					margin: 0 auto;
+					a{
+						text-decoration: none;
+						padding: 0 12px;
+						border: none;
+						background: transparent;
+						span{
+							padding: 12px 4px 8px;
+							line-height: 1;
+							display: inline-block;
+							color: @text-color;
+							text-transform: uppercase;
+							border-bottom: 5px solid transparent;
+							.box-sizing(border-box);
+						}
+						&:hover{
+							background: transparent;
+							span{
+								border-color: @text-color;
+							}
+						}
+					}
+					li.active a span{
+						border-color: @text-color;
+					}
+				}
+				&.affix{
+					position: fixed;
+					width: 100%;
+					.box-sizing(border-box);
+					top: -40px;
+				}
+			}
+		}
+	}
+	@media(max-width: @grid-float-breakpoint){
+		position: relative;
+		z-index: 5;
+		nav{
+			&#main-nav{
+				position: relative;
+				z-index: 3;
+				background: @background url(../images/tree-pattern.png) center top repeat-x;
+				min-height: 92px;
+				.brand{
+					display: block;
+					width: 156px;
+					.box-sizing(border-box);
+					// padding: 0 10px;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				button.navbar-toggle{
+					margin-top: 26px;
+					.icon-bar{
+						background: black;
+					}
+				}
+				#mobile-collapse-target{
+					padding-top: 92px;
+					.main-nav{
+						// background: @background;
+						margin: 0;
+						padding: 0;
+						list-style-type: none;
+						a{
+
+						}
+						&:first-child{
+							padding-top: 53px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+footer{
+	background: @dark-gray;
+	color: #b6b7b8;
+	margin-top: 38px;
+	.box-shadow(0px 0px 30px 8px fade(black, 30%));
+	#footer-section-labels{
+		border-bottom: 2px solid #4c4b4d;
+		margin-bottom: 15px;
+		span{
+			padding: 22px 0;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: unit(19/@font-size-base, em);
+		}
+	}
+	#footer-content{
+		.inner{
+			&.contact{
+				span, a{
+					font-size: unit(11/@font-size-base, em);
+					display: block;
+				}
+				a{
+					color: #b6b7b8;
+					text-decoration: none;
+					margin-top: 15px;
+				}
+			}
+			&.create{
+				.clearfix();
+				img{
+					float: right;
+				}
+			}
+		}
+	}
+	#copyright-bar{
+		margin-top: 8px;
+		padding: 12px 0;
+		font-size: unit(10/@font-size-base, em);
+		background: @darkest-gray;
+		color: #7d7d7e;
+	}
+}
+
+.carousel{
+	.carousel-indicators{
+		bottom: -45px;
+	}
+	.carousel-control{
+		span{
+			width: 44px;
+			height: 86px;
+			background: transparent url('../images/slider-sprite.png') no-repeat;
+			margin-top: -43px;
+			margin-left: -22px;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+		&.left{
+			span{
+				background-position: 0 0;
+			}
+			&:hover{
+				span{
+					background-position: 0 -91px;
+				}
+			}
+		}
+		&.right{
+			span{
+				background-position: -49px 0;
+			}
+			&:hover{
+				span{
+					background-position: -49px -91px;
+				}
+			}
+		}
+	}
+}
+
+.address{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+section.heading{
+	background: #efefef;
+	text-transform: uppercase;
+	margin: 15px 0;
+	&:first-of-type{
+		margin-top: 0;
+	}
+	h1{
+		font-size: unit(30/@font-size-base, em);
+		margin: 0;
+		padding: 8px 0;
+		line-height: 1;
+	}
+}
+
+header + section.heading:first-of-type{
+	margin-top: 20px;
+}
