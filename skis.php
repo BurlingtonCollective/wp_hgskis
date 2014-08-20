@@ -21,13 +21,13 @@ include_once('includes/header.php');
 					<div class="col-xs-6">
 						<div class="product-wrapper">
 							<h5 class="view-label">Topsheets</h5>
-							<img class="img-responsive" src="images/product/topsheet.png">
-							<img class="img-responsive show-hover" src="images/product/base.png">
+							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/product/topsheet.png">
+							<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/product/base.png">
 						</div>
 					</div>
 					<div class="col-xs-6">
 						<h5 class="view-label">Profile View</h5>
-						<!-- <img class="img-responsive" src="images/product/profile.png"> -->
+						<!-- <img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/product/profile.png"> -->
 					</div>
 				</div>
 			</div>

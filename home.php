@@ -12,7 +12,7 @@ include_once('includes/header.php');
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner">
 	    <div class="item active">
-	      <img src="images/temp/banner-img.png" alt="hg skis" class="img-responsive" style="margin: 0 auto;">
+	      <img src="<?= get_template_directory_uri(); ?>/images/temp/banner-img.png" alt="hg skis" class="img-responsive" style="margin: 0 auto;">
 	    </div>
 	    <div class="item">
 	    	<div class="video-wrapper" data-fitvids-target>

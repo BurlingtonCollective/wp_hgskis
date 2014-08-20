@@ -3,7 +3,7 @@
 <head>
 	<title>HG Skis</title>
 	<link href='http://fonts.googleapis.com/css?family=Ek+Mukta:300,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/css/master.css">
 </head>
 <body>
 
@@ -20,8 +20,8 @@
 					<span class="icon-bar"></span>
 				</button>
 			</div> -->
-			<a href="index.html" class="brand centered" style="background: transparent url(images/logo-box.png) center -18px no-repeat;">
-				<img class="img-responsive" src="images/logo.png" style="margin-top: -18px;">
+			<a href="index.html" class="brand centered" style="background: transparent url(<?= get_template_directory_uri(); ?>/images/logo-box.png) center -18px no-repeat;">
+				<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logo.png" style="margin-top: -18px;">
 			</a>
 			<button type="button" id="mobile-nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-collapse-target">
 				<span class="sr-only">Toggle Navigation</span>

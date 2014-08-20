@@ -49,7 +49,7 @@
 			</div>
 			<div class="col-xs-4">
 				<div class="inner create">
-					<img class="img-responsive" src="images/na-mark-footer.png">
+					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/na-mark-footer.png">
 				</div>
 			</div>
 		</div>
@@ -65,9 +65,9 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="bower_components/fitvids/jquery.fitvids.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/bower_components/fitvids/jquery.fitvids.js"></script>
+<script type="text/javascript" src="<?= get_template_directory_uri(); ?>/js/main.js"></script>
 </body>
 </html>
