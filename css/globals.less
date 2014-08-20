@@ -1,20 +1,23 @@
 html{
 	background: @darkest-gray;
+	height: 100%;
 	body{
 		background: @background;
 		position: relative;
+		min-height: 100%;
+		.box-sizing(border-box);
+		padding-bottom: @footer-height;
+		footer{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
 	}
 }
 
 .wysiwyg-content{
 	img{
 		display: none !important;
-	}
-}
-
-ul.nav-stacked{
-	& > li > ul.children{
-		.nav-stacked();
 	}
 }
 
@@ -71,7 +74,7 @@ header{
 								border-color: @text-color;
 							}
 						}
-						&.active a{
+						&.active a, &.current-menu-item a{
 							border-color: @text-color;
 						}
 					}
@@ -164,39 +167,42 @@ header{
 	}
 }
 
+@footer-height: 258px + 38px;
+
 footer{
 	background: @dark-gray;
 	color: #b6b7b8;
 	margin-top: 38px;
 	.box-shadow(0px 0px 30px 8px fade(black, 30%));
-	#footer-section-labels{
+	span.footer-section-label{
+		padding: 22px 0;
+		display: block;
+		text-transform: uppercase;
+		font-size: unit(19/@font-size-base, em);
 		border-bottom: 2px solid #4c4b4d;
 		margin-bottom: 15px;
-		span{
-			padding: 22px 0;
-			display: inline-block;
-			text-transform: uppercase;
-			font-size: unit(19/@font-size-base, em);
+		margin-right: -15px;
+		font-weight: 300;
+		&.centered{
+			text-align: center;
 		}
 	}
-	#footer-content{
-		.inner{
-			&.contact{
-				span, a{
-					font-size: unit(11/@font-size-base, em);
-					display: block;
-				}
-				a{
-					color: #b6b7b8;
-					text-decoration: none;
-					margin-top: 15px;
-				}
+	.inner{
+		&.contact{
+			span, a{
+				font-size: unit(11/@font-size-base, em);
+				display: block;
 			}
-			&.create{
-				.clearfix();
-				img{
-					float: right;
-				}
+			a{
+				color: #b6b7b8;
+				text-decoration: none;
+				margin-top: 15px;
+			}
+		}
+		&.create{
+			.clearfix();
+			img{
+				float: right;
 			}
 		}
 	}
