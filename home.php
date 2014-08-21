@@ -62,7 +62,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
 				<div class="featured-block left">
-					<h3>Featured Products <small class="pull-right"><a href="javascript:void(0)">view all products</a></small></h3>
+					<h3>Featured Products<!-- <small class="pull-right"><a href="javascript:void(0)">view all products</a></small> --></h3>
 					<div class="row">
 						<div class="col-xs-6">
 							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/Introducing-the-2015-stinger.jpg">
@@ -75,7 +75,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 			</div>
 			<div class="col-xs-12 col-md-6">
 				<div class="featured-block right">
-					<h3>Latest News <small class="pull-right"><a href="javascript:void(0)">view all news</a></small></h3>
+					<h3>Latest News<!-- <small class="pull-right"><a href="javascript:void(0)">view all news</a></small> --></h3>
 					<div class="row">
 						<div class="col-xs-6">
 							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/IF3-announced.jpg">
