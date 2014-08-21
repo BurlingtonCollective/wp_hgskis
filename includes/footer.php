@@ -116,7 +116,7 @@
 		</div>
 	</div>
 </footer> -->
-
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-502e2676146a7004"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/bower_components/fitvids/jquery.fitvids.js"></script>

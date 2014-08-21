@@ -41,7 +41,12 @@ include_once('includes/header.php');
 				<?php
 				endwhile; endif;
 				?>
-				<ul class="pager">
+				<div class="social-container">
+					<h3>Share</h3>
+					<!-- Go to www.addthis.com/dashboard to customize your tools -->
+					<div class="addthis_responsive_sharing"></div>
+				</div>
+				<ul class="pager" style="clear: both;">
 					<?php
 					$nextPost = get_next_post();
 					$prevPost = get_previous_post();
