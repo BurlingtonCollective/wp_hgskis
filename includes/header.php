@@ -39,4 +39,17 @@
 				</ul>
 			</div>
 		</nav>
+		<?php if(is_page_template('about.php')): ?>
+		<nav id="sub-nav">
+			<div class="container" id="scrollspy">
+				<ul class="nav nav-pills nav-justified">
+					<li><a href="#about" class=""><span>About</span></a></li>
+					<li><a href="#contact" class=""><span>Contact</span></a></li>
+					<li><a href="#history" class=""><span>History</span></a></li>
+					<li><a href="#retailers" class=""><span>Retailers</span></a></li>
+					<li><a href="#warrenty" class=""><span>Warrenty</span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<?php endif; ?>
 	</header>
