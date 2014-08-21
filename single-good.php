@@ -18,12 +18,14 @@ if (have_posts()) : while (have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-6">
-				<div class="product-wrapper">
+				<?php
+				$mainImg = types_render_field('main-image', array('class'=>'img-responsive'));
+				$altImg = types_render_field('alt-good-view', array('class'=>'img-responsive show-hover'));
+				error_log($altImg);
+				?>
+				<div class="product-wrapper <?= !empty($altImg) ? 'switcheroo' : '';?>">
 					<h5 class="view-label">Rollover for Back</h5>
-					<?php
-					echo types_render_field('main-image', array('class'=>'img-responsive'));
-					echo types_render_field('alt-good-view', array('class'=>'img-responsive show-hover'));
-					?>
+					<?php echo $mainImg; echo $altImg; ?>
 				</div>
 			</div>
 			<div class="col-xs-6">

@@ -26,9 +26,9 @@ include_once('includes/header.php');
 				<div class="good-wrapper">
 					<a href="<?php the_permalink(); ?>">
 						<?php
-						echo types_render_field('main-image', array('class'=>'img-responsive'));
+						echo types_render_field('thumbnail-image', array('class'=>'img-responsive', 'alt'=>get_the_title()));
 						?>
-						<h4 style="text-align: center;"><?php the_title();?></h4>
+						<!-- <h4 style="text-align: center;"><?php the_title();?></h4> -->
 					</a>
 				</div>
 			</div>
