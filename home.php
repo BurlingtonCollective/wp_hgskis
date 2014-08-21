@@ -6,8 +6,6 @@ include_once('includes/header.php');
 if (have_posts()) : while (have_posts()) : the_post();
   $slideshowImagesRaw = types_render_field( "slideshow-image", array('output'=>'raw'));
   $slideshowImages = explode(' ', $slideshowImagesRaw);
-  $slideLink = 
-  $slideLinks = explode(' ', $slideLinksRaw);
 ?>
 <section id="banner">
 	<div id="banner-carousel" class="carousel slide">
