@@ -20,7 +20,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 			<div class="col-xs-6">
 				<div class="row">
 					<div class="col-xs-6">
-						<div class="product-wrapper">
+						<div class="product-wrapper switcheroo">
 							<h5 class="view-label">Topsheets</h5>
 							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/topsheet.png">
 							<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/stinger/base.png">
