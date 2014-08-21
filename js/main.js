@@ -32,9 +32,9 @@ $(function(){
 				var url = window.location.protocol + $player.attr('src').split('?')[0];
 				$player[0].contentWindow.postMessage(JSON.stringify(data), url);
 			}
-			$activeSlide.parent().animate({
-				'height': newHeight
-			}, 500);
+			// $activeSlide.parent().animate({
+			// 	'height': newHeight
+			// }, 500);
 		})
 		.carousel({
 			interval: 10000

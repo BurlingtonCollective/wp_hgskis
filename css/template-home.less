@@ -13,6 +13,19 @@ section{
 	&#home-featured{
 		margin-bottom: 40px;
 		.featured-block{
+			.feature-wrapper{
+				.show-hover{
+					display: none;
+				}
+				&:hover{
+					.img-responsive{
+						display: none;
+						&.show-hover{
+							display: block;
+						}
+					}
+				}
+			}
 			&.left{
 				padding-right: 10px;
 			}

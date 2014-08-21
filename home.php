@@ -6,6 +6,8 @@ include_once('includes/header.php');
 if (have_posts()) : while (have_posts()) : the_post();
   $slideshowImagesRaw = types_render_field( "slideshow-image", array('output'=>'raw'));
   $slideshowImages = explode(' ', $slideshowImagesRaw);
+  $slideLink = 
+  $slideLinks = explode(' ', $slideLinksRaw);
 ?>
 <section id="banner">
 	<div id="banner-carousel" class="carousel slide">
@@ -32,7 +34,23 @@ if (have_posts()) : while (have_posts()) : the_post();
 	  	while($slideIndex <= count($slideshowImages)-1):
 	  	?>
 	    <div class="item <?= $slideActive ? 'active' : ''; ?>">
-	      <?= types_render_field("slideshow-image", array('index'=>$slideIndex)); ?>
+	    	<?php
+	    	$slideLink = types_render_field("slide-target", array('index'=>$slideIndex, 'output'=>'raw'));
+	    	if($slideLink && $slideLink != 'override'):
+	    		if(strpos('localhost', $slideLink, 0) === false){
+	    			$external = true;
+	    		}else{
+	    			$external = false;
+	    		}
+	    	?>
+	    	<a href="<?= $slideLink; ?>" <?= $external ? 'target="_blank"' : ''; ?>>
+	    		<?= types_render_field("slide-image", array('index'=>$slideIndex)); ?>
+	    	</a>
+	    	<?php
+	    	else:
+    		types_render_field("slide-image", array('index'=>$slideIndex));
+	    	endif;
+	    	?>
 	    </div>
 	    <!-- <div class="item">
 	    	<div class="video-wrapper" data-fitvids-target>
@@ -65,10 +83,28 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<h3>Featured Products<!-- <small class="pull-right"><a href="javascript:void(0)">view all products</a></small> --></h3>
 					<div class="row">
 						<div class="col-xs-6">
-							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/Introducing-the-2015-stinger.jpg">
+							<?php
+							$featSlot1Link = types_render_field('slot-1-link', array('output'=>'raw'));
+							$featSlot1Img = types_render_field('slot-1-image', array('class'=>'img-responsive'));
+							$featSlot1Rollover = types_render_field('slot-1-rollover', array('class'=>'img-responsive show-hover'));
+							?>
+							<div class="feature-wrapper">
+								<a href="<?= $featSlot1Link; ?>">
+									<?php echo $featSlot1Img; echo $featSlot1Rollover; ?>
+								</a>
+							</div>
 						</div>
 						<div class="col-xs-6">
-							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/Classic-Hoodie.jpg">
+							<?php
+							$featSlot2Link = types_render_field('slot-2-link', array('output'=>'raw'));
+							$featSlot2Img = types_render_field('slot-2-image', array('class'=>'img-responsive'));
+							$featSlot2Rollover = types_render_field('slot-2-rollover', array('class'=>'img-responsive show-hover'));
+							?>
+							<div class="feature-wrapper">
+								<a href="<?= $featSlot2Link; ?>">
+									<?php echo $featSlot2Img; echo $featSlot2Rollover; ?>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -78,10 +114,28 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<h3>Latest News<!-- <small class="pull-right"><a href="javascript:void(0)">view all news</a></small> --></h3>
 					<div class="row">
 						<div class="col-xs-6">
-							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/IF3-announced.jpg">
+							<?php
+							$newsSlot1Link = types_render_field('slot-1-link-news', array('output'=>'raw'));
+							$newsSlot1Img = types_render_field('slot-1-image-news', array('class'=>'img-responsive'));
+							$newsSlot1Rollover = types_render_field('slot-1-rollover-news', array('class'=>'img-responsive show-hover'));
+							?>
+							<div class="feature-wrapper">
+								<a href="<?= $newsSlot1Link; ?>">
+									<?php echo $newsSlot1Img; echo $newsSlot1Rollover; ?>
+								</a>
+							</div>
 						</div>
 						<div class="col-xs-6">
-							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/featuredsection/Cole-season-edit.jpg">
+							<?php
+							$newsSlot2Link = types_render_field('slot-2-link-news', array('output'=>'raw'));
+							$newsSlot2Img = types_render_field('slot-2-image-news', array('class'=>'img-responsive'));
+							$newsSlot2Rollover = types_render_field('slot-2-rollover-news', array('class'=>'img-responsive show-hover'));
+							?>
+							<div class="feature-wrapper">
+								<a href="<?= $newsSlot2Link; ?>">
+									<?php echo $newsSlot2Img; echo $newsSlot2Rollover; ?>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
