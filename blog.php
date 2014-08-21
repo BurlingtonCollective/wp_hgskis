@@ -4,7 +4,7 @@ Template Name: Media Page
 */
 include_once('includes/header.php');
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$media = new WP_Query('posts_per_page=5&paged='+$paged);
+$media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 ?>
 <section id="blog">
 	<div class="container">
@@ -44,12 +44,18 @@ $media = new WP_Query('posts_per_page=5&paged='+$paged);
 				endwhile; endif;
 				?>
 				<ul class="pager">
-				  <li class="previous"><?php previous_posts_link( '&larr; Previous Entries' ); ?></li>
-				  <li class="next"><?php next_posts_link( 'Next Entries &rarr;', '' ); ?></li>
+				  <li class="previous"><?php next_posts_link( '&larr; Older Titles', $media->max_num_pages); ?></li>
+				  <li class="next"><?php previous_posts_link( 'Newer Titles &rarr;'); ?></li>
 				</ul>
 			</div>
 			<div id="sidebar" class="col-xs-3 col-xs-push-1">
-				<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/vermonts-finest.jpg">
+				<?php
+					$adLink = get_post_meta(2111, 'wpcf-overview-ad-link', true);
+					$external = strpos('hgskis.com', $adLink, 0) !== false;
+				?>
+				<a href="<?= $adLink; ?>" <?= $external ? 'target="_blank"': ''; ?>>
+					<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/vermonts-finest.jpg">
+				</a>
 				<h4>Categories</h4>
 				<ul class="nav nav-stacked">
 					<?php

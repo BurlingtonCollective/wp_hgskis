@@ -116,10 +116,12 @@
 		</div>
 	</div>
 </footer> -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-502e2676146a7004"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/bower_components/fitvids/jquery.fitvids.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/js/main.js"></script>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "a6d73f87-8f52-428c-aaf8-5fdde81b80b0", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </body>
 </html>

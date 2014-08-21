@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: Media Page
-*/
 include_once('includes/header.php');
 ?>
 <section id="blog">
@@ -44,7 +41,9 @@ include_once('includes/header.php');
 				<div class="social-container">
 					<h3>Share</h3>
 					<!-- Go to www.addthis.com/dashboard to customize your tools -->
-					<div class="addthis_responsive_sharing"></div>
+					<span class='st_facebook_large' displayText='Facebook'></span>
+					<span class='st_twitter_large' displayText='Tweet'></span>
+					<span class='st_email_large' displayText='Email'></span>
 				</div>
 				<ul class="pager" style="clear: both;">
 					<?php
@@ -56,7 +55,13 @@ include_once('includes/header.php');
 				</ul>
 			</div>
 			<div id="sidebar" class="col-xs-3 col-xs-push-1">
-				<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/queen-city.jpg">
+				<?php
+					$adLink = get_post_meta(2111, 'wpcf-detail-ad-link', true);
+					$external = strpos('hgskis.com', $adLink, 0) !== false;
+				?>
+				<a href="<?= $adLink; ?>" <?= $external ? 'target="_blank"': ''; ?>>
+					<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/queen-city.jpg">
+				</a>
 				<h4>Categories</h4>
 				<ul class="nav nav-stacked">
 					<?php
