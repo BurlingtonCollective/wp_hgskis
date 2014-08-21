@@ -57,6 +57,30 @@ section{
 					text-transform: uppercase;
 				}
 			}
+			.nav-tabs{
+				& > li{
+					a{
+						border: none;
+					}
+					.img-responsive{
+						max-width: 100%;
+					}
+					.show-hover{
+						display: none;
+					}
+					&.active, &:hover{
+						a{
+							background: transparent;
+						}
+						.initial{
+							display: none;
+						}
+						.show-hover{
+							display: block;
+						}
+					}
+				}
+			}
 		}
 	}
 }

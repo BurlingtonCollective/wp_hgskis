@@ -22,13 +22,13 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<div class="col-xs-6">
 						<div class="product-wrapper">
 							<h5 class="view-label">Topsheets</h5>
-							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/product/topsheet.png">
-							<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/product/base.png">
+							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/topsheet.png">
+							<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/stinger/base.png">
 						</div>
 					</div>
 					<div class="col-xs-6" style="text-align: center;">
 						<h5 class="view-label">Profile View</h5>
-						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/product/profile.png" style="margin: 20px auto 0;">
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/profile.png" style="margin: 20px auto 0;">
 					</div>
 				</div>
 			</div>
@@ -64,14 +64,14 @@ if (have_posts()) : while (have_posts()) : the_post();
 					</table>
 					<h3>Features</h3>
 					<ul class="nav nav-tabs nav-justified">
-						<li class="active"><a href="#tab-0" data-toggle="tab">x</a></li>
-						<li><a href="#tab-1" data-toggle="tab">x</a></li>
-						<li><a href="#tab-2" data-toggle="tab">x</a></li>
-						<li><a href="#tab-3" data-toggle="tab">x</a></li>
-						<li><a href="#tab-4" data-toggle="tab">x</a></li>
-						<li><a href="#tab-5" data-toggle="tab">x</a></li>
-						<li><a href="#tab-6" data-toggle="tab">x</a></li>
-						<li><a href="#tab-7" data-toggle="tab">x</a></li>
+						<li class="active"><a href="#tab-0" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/flexin.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/flexin-rollover.png"></a></li>
+						<li><a href="#tab-1" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/pop.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/pop-rollover.png"></a></li>
+						<li><a href="#tab-2" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/mona.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/mona-rollover.png"></a></li>
+						<li><a href="#tab-3" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/sidewall.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/sidewall-rollover.png"></a></li>
+						<li><a href="#tab-4" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/no-delam.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/no-delam-rollover.png"></a></li>
+						<li><a href="#tab-5" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/base.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/base-rollover.png"></a></li>
+						<li><a href="#tab-6" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/fatty-edges.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/fatty-edges-rollover.png"></a></li>
+						<li><a href="#tab-7" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/symmetrical.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/symmetrical-rollover.png"></a></li>
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="tab-0">
@@ -107,32 +107,40 @@ if (have_posts()) : while (have_posts()) : the_post();
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 						</div>
 					</div>
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<div id="product-slider" class="carousel slide" data-ride="carousel">
 					  <!-- Indicators -->
 					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#product-slider" data-slide-to="0" class="active"></li>
+					    <li data-target="#product-slider" data-slide-to="1"></li>
+					    <li data-target="#product-slider" data-slide-to="2"></li>
+					    <li data-target="#product-slider" data-slide-to="3"></li>
+					    <li data-target="#product-slider" data-slide-to="4"></li>
 					  </ol>
 
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner">
 					    <div class="item active">
-					      <img src="http://placehold.it/800x600&amp;text=Slide+1" alt="...">
+					      <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos1.jpg" alt="...">
 					    </div>
 					    <div class="item">
-					      <img src="http://placehold.it/800x600&amp;text=Slide+2" alt="...">
+					      <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos2.jpg" alt="...">
 					    </div>
 					    <div class="item">
-					      <img src="http://placehold.it/800x600&amp;text=Slide+3" alt="...">
+					      <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos3.jpg" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos4.jpg" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos5.jpg" alt="...">
 					    </div>
 					  </div>
 
 					  <!-- Controls -->
-					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					  <a class="left carousel-control" href="#product-slider" role="button" data-slide="prev">
 					    <span></span>
 					  </a>
-					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					  <a class="right carousel-control" href="#product-slider" role="button" data-slide="next">
 					    <span></span>
 					  </a>
 					</div>
