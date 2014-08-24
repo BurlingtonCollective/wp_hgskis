@@ -21,7 +21,6 @@ if (have_posts()) : while (have_posts()) : the_post();
 				<?php
 				$mainImg = types_render_field('main-image', array('class'=>'img-responsive'));
 				$altImg = types_render_field('alt-good-view', array('class'=>'img-responsive show-hover'));
-				error_log($altImg);
 				?>
 				<div class="product-wrapper <?= !empty($altImg) ? 'switcheroo' : '';?>">
 					<?php if(!empty($altImg)):?>
@@ -34,6 +33,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 				<div class="description-wrapper">
 					<h2><?php the_title(); ?></h2>
 					<?php the_content();
+					?>
+					<span class="price"><?= types_render_field('price', array()); ?></span>
+					<?php
 					echo types_render_field('paypal-form', array('output'=>'raw')); 
 					?>
 					<div class="wysiwyg-content additional">
