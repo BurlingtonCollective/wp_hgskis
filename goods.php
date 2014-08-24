@@ -19,7 +19,7 @@ include_once('includes/header.php');
 	<div class="container">
 		<div class="row">
 			<?php
-			$goods = new WP_Query(array('post_type'=>'good'));
+			$goods = new WP_Query(array('post_type'=>'good', 'posts_per_page'=>-1));
 			if($goods->have_posts()): while($goods->have_posts()): $goods->the_post();
 			?>
 			<div class="col-xs-3">
