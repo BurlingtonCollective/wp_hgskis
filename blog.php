@@ -18,7 +18,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 				<article>
 					<div class="heading">
 						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-						<span class="date">08/08/2014</span>
+						<span class="date"><?php the_date(); ?></span>
 					</div>
 					<div class="content">
 						<div class="wysiwyg-content">
@@ -51,7 +51,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 			<div id="sidebar" class="col-xs-3 col-xs-push-1">
 				<?php
 					$adLink = get_post_meta(2111, 'wpcf-overview-ad-link', true);
-					$external = strpos('hgskis.com', $adLink, 0) !== false;
+					$external = strpos($adLink, 'hgskis.com', 0) !== false;
 				?>
 				<a href="<?= $adLink; ?>" <?= $external ? 'target="_blank"': ''; ?>>
 					<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/vermonts-finest.jpg">
