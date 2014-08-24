@@ -4,7 +4,7 @@ Template Name: Home Page
 */
 include_once('includes/header.php');
 if (have_posts()) : while (have_posts()) : the_post();
-  $slideshowImagesRaw = types_render_field( "slideshow-image", array('output'=>'raw'));
+  $slideshowImagesRaw = types_render_field( "slide-image", array('output'=>'raw'));
   $slideshowImages = explode(' ', $slideshowImagesRaw);
 ?>
 <section id="banner">
