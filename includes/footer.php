@@ -14,22 +14,34 @@
 				<div class="inner connect">
 					<div class="row">
 						<div class="col-xs-2">
-							<img class="img-responsive" src="http://placehold.it/80x80">
+							<a href="http://facebook.com" target="_blank">
+								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/facebook-full.png">
+							</a>
 						</div>
 						<div class="col-xs-2">
-							<img class="img-responsive" src="http://placehold.it/80x80">
+							<a href="http://facebook.com/hgskis" target="_blank">
+								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/twitter-full.png">
+							</a>
 						</div>
 						<div class="col-xs-2">
-							<img class="img-responsive" src="http://placehold.it/80x80">
+							<a href="http://vimeo.com/hgskis" target="_blank">
+								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/vimeo-full.png">
+							</a>
 						</div>
 						<div class="col-xs-2">
-							<img class="img-responsive" src="http://placehold.it/80x80">
+							<a href="https://www.youtube.com/channel/UCp_6Y6Du7APG3Wdm1tuwNwA" target="_blank">
+								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/youtube-full.png">
+							</a>
 						</div>
 						<div class="col-xs-2">
-							<img class="img-responsive" src="http://placehold.it/80x80">
+							<a href="http://instagram.com/hgskis" target="_blank">
+								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/instagram-full.png">
+							</a>
 						</div>
 						<div class="col-xs-2">
-							<img class="img-responsive" src="http://placehold.it/80x80">
+							<a href="https://www.flickr.com/photos/111989921@N02/" target="_blank">
+								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/flickr-full.png">
+							</a>
 						</div>
 					</div>
 				</div>

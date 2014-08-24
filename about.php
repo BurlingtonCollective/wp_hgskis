@@ -3,6 +3,7 @@
 Template Name: About Page
 */
 include_once('includes/header.php');
+if(have_posts()) : while(have_posts()) : the_post();
 ?>
 <section id="banner">
 	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/temp/banner-img-about.png" style="margin: 0 auto;">
@@ -169,11 +170,12 @@ include_once('includes/header.php');
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>We are a small company so we take all warranties very seriously and take care of them by a case to case scenario. Defects in materials or workmanship are covered for the practical lifetime of the product. If the skis do have craftsmanship or material defects it is HG Skis responsibility to repair or replace the product.</p>
 			</div>
 		</div>
 	</div>
 </section>
 <?php
+endwhile; endif;
 include_once('includes/footer.php');
 ?>

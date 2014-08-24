@@ -1,11 +1,17 @@
 <?php
-/*
-Template Name: Media Page
-*/
 include_once('includes/header.php');
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 ?>
+<section class="heading">
+	<div class="container">
+		<div class="row">
+			<div class="page-heading">
+				<h1><?php printf(__('Monthly Archives: %s', 'shape'), get_the_date()); ?></h1>
+			</div>
+		</div>
+	</div>
+</section>
 <section id="blog">
 	<div class="container">
 		<div class="row">
