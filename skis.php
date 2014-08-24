@@ -36,6 +36,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 				<div class="description-wrapper">
 					<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
+					<span class="price">$499.00</span>
 					<?= get_post_meta(get_the_ID(), 'ski_paypal_embed', true); ?>
 					<h3>Dimensions</h3>
 					<table class="table table-striped">
