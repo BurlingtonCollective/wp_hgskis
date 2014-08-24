@@ -14,12 +14,12 @@
 				<div class="inner connect">
 					<div class="row">
 						<div class="col-xs-2">
-							<a href="http://facebook.com" target="_blank">
+							<a href="http://facebook.com/hgskis" target="_blank">
 								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/facebook-full.png">
 							</a>
 						</div>
 						<div class="col-xs-2">
-							<a href="http://facebook.com/hgskis" target="_blank">
+							<a href="https://twitter.com/HG_Skis" target="_blank">
 								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/twitter-full.png">
 							</a>
 						</div>
