@@ -24,7 +24,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 				error_log($altImg);
 				?>
 				<div class="product-wrapper <?= !empty($altImg) ? 'switcheroo' : '';?>">
+					<?php if(!empty($altImg)):?>
 					<h5 class="view-label">Rollover for Back</h5>
+					<?php endif; ?>
 					<?php echo $mainImg; echo $altImg; ?>
 				</div>
 			</div>
@@ -33,8 +35,12 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<h2><?php the_title(); ?></h2>
 					<?php the_content();
 					echo types_render_field('paypal-form', array('output'=>'raw')); 
-					echo types_render_field('additional-information', array());
 					?>
+					<div class="wysiwyg-content additional">
+						<?php
+						echo types_render_field('additional-information', array());
+						?>
+					</div>
 				</div>
 			</div>
 		</div>
