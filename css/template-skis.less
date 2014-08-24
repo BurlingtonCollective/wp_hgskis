@@ -81,6 +81,61 @@ section{
 					}
 				}
 			}
+			.panel-group#technology{
+				.panel{
+					background: transparent;
+					border-radius: 0px;
+					.panel-heading{
+						background: transparent;
+						a{
+							display: block;
+							text-decoration: none;
+							.clearfix();
+							span{
+								float: left;
+								line-height: 25px;
+								padding-left: 20px;
+								display: block;
+							}
+							i.glyphicon{
+								float: right;
+								line-height: 25px;
+								&.glyphicon-chevron-down{
+									display: none;
+								}
+							}
+							.img-responsive{
+								float: left;
+								width: 25px;
+								&.show-hover{
+									display: none;
+								}
+							}
+							&:hover, &.open{
+								.img-responsive{
+									display: none;
+									&.show-hover{
+										display: block;
+									}
+								}
+							}
+							&.open{
+								i.glyphicon{
+									display: none;
+									&.glyphicon-chevron-down{
+										display: block;
+										color: @red;
+									}
+								}
+							}
+						}
+					}
+					&+.panel{
+						margin-top: 0;
+						border-top: none;
+					}
+				}
+			}
 		}
 	}
 }

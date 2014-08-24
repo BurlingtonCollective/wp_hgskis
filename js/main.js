@@ -45,4 +45,14 @@ $(function(){
 		$(this).css('transform', 'rotate('+a+'deg)');
 	});
 
+	$('#technology').on('show.bs.collapse', function(e){
+		var $collapse = $(e.target),
+				$trigger = $collapse.parent().find('a[href="#'+$collapse.attr('id')+'"]');
+		$trigger.addClass('open');
+	}).on('hide.bs.collapse', function(e){
+		var $collapse = $(e.target),
+				$trigger = $collapse.parent().find('a[href="#'+$collapse.attr('id')+'"]');
+		$trigger.removeClass('open');
+	});
+
 });

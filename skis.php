@@ -20,10 +20,10 @@ if (have_posts()) : while (have_posts()) : the_post();
 			<div class="col-xs-6">
 				<div class="row">
 					<div class="col-xs-6">
-						<div class="product-wrapper switcheroo">
+						<div class="product-wrapper">
 							<h5 class="view-label">Topsheets</h5>
 							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/topsheet.png">
-							<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/stinger/base.png">
+							<!-- <img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/stinger/base.png"> -->
 						</div>
 					</div>
 					<div class="col-xs-6" style="text-align: center;">
@@ -57,54 +57,148 @@ if (have_posts()) : while (have_posts()) : the_post();
 							</tr>
 							<tr>
 								<td>Camber</td>
-								<td>12m</td>
-								<td>12m</td>
+								<td>12cm</td>
+								<td>12cm</td>
 							</tr>
 						</tbody>
 					</table>
-					<h3>Features</h3>
-					<ul class="nav nav-tabs nav-justified">
-						<li class="active"><a href="#tab-0" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/flexin.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/flexin-rollover.png"></a></li>
-						<li><a href="#tab-1" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/pop.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/pop-rollover.png"></a></li>
-						<li><a href="#tab-2" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/mona.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/mona-rollover.png"></a></li>
-						<li><a href="#tab-3" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/sidewall.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/sidewall-rollover.png"></a></li>
-						<li><a href="#tab-4" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/no-delam.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/no-delam-rollover.png"></a></li>
-						<li><a href="#tab-5" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/base.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/base-rollover.png"></a></li>
-						<li><a href="#tab-6" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/fatty-edges.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/fatty-edges-rollover.png"></a></li>
-						<li><a href="#tab-7" data-toggle="tab"><img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/symmetrical.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/symmetrical-rollover.png"></a></li>
-					</ul>
-					<div class="tab-content">
-						<div class="tab-pane fade in active" id="tab-0">
-							<h5>Advanced Flex Profile</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					<h3>Technology</h3>
+					<div class="panel-group" id="technology">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panel-0" class="open" data-toggle="collapse" data-parent="#technology">
+										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/flexin.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/flexin-rollover.png">
+										<span>Popeye Flex</span>
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse in" id="panel-0">
+								<div class="panel-body">
+									<ul>
+										<li>Balanced flex profile for maximum control.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="tab-pane fade" id="tab-1">
-							<h5>Tab 2</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panel-1" data-toggle="collapse" data-parent="#technology">
+										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/mona.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/mona-rollover.png">
+										<span>Art Attack</span>
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse" id="panel-1">
+								<div class="panel-body">
+									<ul>
+										<li>People will line up to see your skis.</li>
+										<li>Hand painted graphic from skiers like you.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="tab-pane fade" id="tab-2">
-							<h5>Tab 3</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panel-2" data-toggle="collapse" data-parent="#technology">
+										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/sidewall.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/sidewall-rollover.png">
+										<span>8th Wonder Sidewall</span>
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse" id="panel-2">
+								<div class="panel-body">
+									<ul>
+										<li>Side wall geometry that holds edge pressure, not snow buildup.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="tab-pane fade" id="tab-3">
-							<h5>Tab 4</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panel-3" data-toggle="collapse" data-parent="#technology">
+										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/no-delam.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/no-delam-rollover.png">
+										<span>Zero-Delam</span>
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse" id="panel-3">
+								<div class="panel-body">
+									<ul>
+										<li>Your tips won't explode when you get to know the gucci plateau.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="tab-pane fade" id="tab-4">
-							<h5>Tab 5</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panel-4" data-toggle="collapse" data-parent="#technology">
+										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/base.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/base-rollover.png">
+										<span>Double Base</span>
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse" id="panel-4">
+								<div class="panel-body">
+									<ul>
+										<li>Party on Wayne.</li>
+										<li>Our bases are double the industry standard thinkness, twice as thick and twice as strong.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="tab-pane fade" id="tab-5">
-							<h5>Tab 6</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panel-5" data-toggle="collapse" data-parent="#technology">
+										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/fatty-edges.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/fatty-edges-rollover.png">
+										<span>Fat Edges</span>
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse" id="panel-5">
+								<div class="panel-body">
+									<ul>
+										<li>Twice the industry standard thinkness, so you can slam em' hard.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="tab-pane fade" id="tab-6">
-							<h5>Tab 7</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-						</div>
-						<div class="tab-pane fade" id="tab-7">
-							<h5>Tab 8</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panel-6" data-toggle="collapse" data-parent="#technology">
+										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/symmetrical.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/symmetrical-rollover.png">
+										<span>Symmetric Design</span>
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse" id="panel-6">
+								<div class="panel-body">
+									<ul>
+										<li>It's cool to ski backwards.</li>
+										<li>Fully symmetric ski - feels like freedom.</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div id="product-slider" class="carousel slide" data-ride="carousel">
