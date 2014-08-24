@@ -6,7 +6,7 @@ include_once('includes/header.php');
 if(have_posts()) : while(have_posts()) : the_post();
 ?>
 <section id="banner">
-	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/temp/banner-img-about.png" style="margin: 0 auto;">
+	<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/about-banner.jpg" style="margin: 0 auto;">
 </section>
 <section id="about" class="heading">
 	<div class="container">
