@@ -34,7 +34,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 		</div>
 	</div>
 </section>
-<section id="contact" class="heading">
+<section id="contact" class="heading" style="margin-top:10px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -85,7 +85,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 		</div>
 	</div>
 </section>
-<section id="history" class="heading">
+<section id="history" class="heading" style="margin-top:10px;">
 	<div class="container">
 		<div class="row" class="page-heading">
 			<div class="col-xs-12">
@@ -118,7 +118,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 		</div>
 	</div>
 </section>
-<section id="retailers" class="heading">
+<section id="retailers" class="heading" style="margin-top:10px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -155,7 +155,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 		</div>
 	</div>
 </section>
-<section id="warrenty" class="heading">
+<section id="warrenty" class="heading" style="margin-top:10px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
