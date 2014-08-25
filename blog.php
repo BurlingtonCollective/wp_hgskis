@@ -63,7 +63,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 			<div id="sidebar" class="hidden-xs col-sm-4 col-md-3 col-md-push-1">
 				<?php
 					$adLink = get_post_meta(2340, 'wpcf-overview-ad-link', true);
-					$external = strpos($adLink, 'hgskis.com', 0) !== false;
+					$external = strpos($adLink, 'hgskis.com', 0) === false;
 				?>
 				<a href="<?= $adLink; ?>" <?= $external ? 'target="_blank"': ''; ?>>
 					<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/vermonts-finest.jpg">
