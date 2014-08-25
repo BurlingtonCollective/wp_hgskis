@@ -44,23 +44,23 @@ if (have_posts()) : while (have_posts()) : the_post();
 						<tbody>
 							<tr>
 								<td>Length</td>
-								<td>169cm</td>
-								<td>178cm</td>
+								<td>169 cm</td>
+								<td>178 cm</td>
 							</tr>
 							<tr>
 								<td>Tip - Waist - Tail</td>
-								<td>123 - 96 - 123mm</td>
-								<td>125 - 96 - 125mm</td>
+								<td>123 - 96 - 123 mm</td>
+								<td>125 - 96 - 125 mm</td>
 							</tr>
 							<tr>
 								<td>Turning Radius</td>
-								<td>18m</td>
-								<td>18m</td>
+								<td>18 m</td>
+								<td>18 m</td>
 							</tr>
 							<tr>
 								<td>Camber</td>
-								<td>12cm</td>
-								<td>12cm</td>
+								<td>12 mm</td>
+								<td>12 mm</td>
 							</tr>
 						</tbody>
 					</table>

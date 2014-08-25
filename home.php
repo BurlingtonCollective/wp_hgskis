@@ -178,13 +178,13 @@ if (have_posts()) : while (have_posts()) : the_post();
 			<div class="col-xs-12 col-sm-5">
 				<form action="//hgskis.us5.list-manage.com/subscribe/post?u=810ab4864dd3bebc3a59b701b&amp;id=77d981dbf1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
 					<div class="input-group">
-						<input type="email" name="EMAIL" class="form-control" placeholder="your email here">
+						<input type="email" name="EMAIL" class="form-control" placeholder="your email here" id="email-capture-field">
 						<span class="input-group-btn">
 							<button name="subscribe" class="btn btn-default" type="submit">Cheers</button>
 						</span>
 					</div>
 					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_810ab4864dd3bebc3a59b701b_77d981dbf1" tabindex="-1" value=""></div>
+			    <div style="position: absolute; left: -5000px;"><input type="text" name="b_810ab4864dd3bebc3a59b701b_77d981dbf1" tabindex="-1" value="" id="gotcha"></div>
 				</form>
 			</div>
 		</div>

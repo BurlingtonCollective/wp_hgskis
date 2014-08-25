@@ -3,13 +3,18 @@
 		margin-bottom: 20px;
 		.heading{
 			background: #efefef;
-			padding: 15px;
+			padding: 10px 10px 8px;
 			h3{
 				margin: 0;
 				text-transform: uppercase;
 				a{
 					color: inherit;
+					text-decoration: none;
 				}
+			}
+			.date{
+				font-size: unit(12/@font-size-base, em);
+				font-weight: 300;
 			}
 		}
 		.content{
@@ -21,15 +26,13 @@
 				}
 			}
 		}
-		&:first-of-type{
-			margin-top: 20px;
-		}
 	}
 	.pager{
 		a{
 			background: transparent;
 			border-radius: 0px;
 			color: @text-color;
+			border: none;
 			&:hover{
 				background: transparent;
 				color: @red;
@@ -45,16 +48,18 @@
 		}
 		h4{
 			margin: 15px 0;
-			padding: 15px;
+			padding: 10px 10px 8px;
 			background: #efefef;
 			text-transform: uppercase;
+			font-weight: 300;
 		}
 		ul.nav{
 			li{
 				a{
-					padding: 4px 12px;
+					padding: 1px 12px;
 					color: @text-color;
 					text-transform: uppercase;
+					font-weight: 300;
 					&:hover{
 						// background: #efefef;
 						background: transparent;

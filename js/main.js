@@ -55,4 +55,32 @@ $(function(){
 		$trigger.removeClass('open');
 	});
 
+	$('button[name="subscribe"]').popover({
+		trigger: 'manual',
+		title: 'You\'ve been subscribed!',
+		content: 'Check your email to verify, and get the lastest.'
+	});
+	$('form#mc-embedded-subscribe-form').on('submit', function(e){
+		e.preventDefault();
+		var $form = $(this),
+				$input = $('#email-capture-field'),
+				$honeypot = $('#gotcha');
+		if($input.val() != '' && $honeypot.val() == ''){
+			$.ajax({
+				type: $form.attr('method'),
+				url: $form.attr('action'),
+				data: $form.serialize(),
+				cache: false,
+				dataType: 'json',
+				contentType: "application/json; charset=utf-8",
+				success: function(data){
+					console.log(data);
+					// if(data.result == 'success'){
+
+					// }
+				}
+			});
+		}
+	});
+
 });
