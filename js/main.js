@@ -61,6 +61,7 @@ $(function(){
 		content: 'You can now rest easy knowing the best East Coast ski content and deals are coming your way.',
 		placement: 'auto top'
 	});
+	//MAILCHIMP
 	$('form#mc-embedded-subscribe-form').on('submit', function(e){
 		e.preventDefault();
 		var $form = $(this),
@@ -83,5 +84,29 @@ $(function(){
 			});
 		}
 	});
+	//EMAIL
+	// $('form#mc-embedded-subscribe-form').on('submit', function(e){
+	// 	e.preventDefault();
+	// 	var $form = $(this),
+	// 			$input = $('#email-capture-field'),
+	// 			$honeypot = $('#gotcha');
+	// 	if($input.val() != '' && $honeypot.val() == ''){
+	// 		$.ajax({
+	// 			type: 'post',
+	// 			url: 'http://formmail.dreamhost.com/cgi-bin/formmail.cgi',
+	// 			data: {
+	// 				recipient: 'info@hgskis.com',
+	// 				subject: 'Subscription Request: '+$input.val(),
+	// 				email: $input.val(),
+	// 				success: function(){
+	// 					$('#mc-embedded-subscribe-form').popover('show');
+	// 					setTimeout(function(){
+	// 						$('#mc-embedded-subscribe-form').popover('hide');
+	// 					}, 3000);
+	// 				}
+	// 			}
+	// 		});
+	// 	}
+	// });
 
 });
