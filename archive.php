@@ -6,8 +6,10 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 <section class="heading">
 	<div class="container">
 		<div class="row">
-			<div class="page-heading">
-				<h1><?php printf(__('Monthly Archives: %s', 'shape'), get_the_date()); ?></h1>
+			<div class="col-xs-12">
+				<div class="page-heading">
+					<h1><?php printf(__('Monthly Archives: %s', 'shape'), get_the_date()); ?></h1>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -15,9 +17,9 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 <section id="blog">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-8">
+			<div class="col-xs-12 col-sm-8">
 				<?php
-				if($media->have_posts()): while($media->have_posts()): $media->the_post();
+				if(have_posts()): while(have_posts()): the_post();
 				$categories = wp_get_post_categories(get_the_ID(), array('fields'=>'slugs'));
 				$vimeo_embed = get_post_meta(get_the_ID(), 'vimeo_embed', true);
 				?>
@@ -66,7 +68,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 				  <li class="next"><?php previous_posts_link( 'Newer Titles &rarr;'); ?></li>
 				</ul>
 			</div>
-			<div id="sidebar" class="col-xs-3 col-xs-push-1">
+			<div id="sidebar" class="hidden-xs col-sm-4 col-md-3 col-md-push-1">
 				<?php
 					$adLink = get_post_meta(2111, 'wpcf-overview-ad-link', true);
 					$external = strpos($adLink, 'hgskis.com', 0) !== false;

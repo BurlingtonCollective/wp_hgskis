@@ -22,7 +22,7 @@ include_once('includes/header.php');
 			$goods = new WP_Query(array('post_type'=>'good', 'posts_per_page'=>-1));
 			if($goods->have_posts()): while($goods->have_posts()): $goods->the_post();
 			?>
-			<div class="col-xs-3">
+			<div class="col-xs-6 col-sm-3">
 				<div class="good-wrapper">
 					<a href="<?php the_permalink(); ?>">
 						<?php
