@@ -17,25 +17,26 @@ if (have_posts()) : while (have_posts()) : the_post();
 <section id="product">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-6">
+			<div class="col-xs-12 col-sm-6">
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-xs-12 col-md-6">
 						<div class="product-wrapper">
-							<h5 class="view-label">Topsheets</h5>
+							<h5 class="view-label"><strong class="visible-xs">Stinger </strong>Topsheets</h5>
 							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/topsheet.png">
 							<!-- <img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/stinger/base.png"> -->
 						</div>
 					</div>
-					<div class="col-xs-6" style="text-align: center;">
+					<div class="hidden-xs hidden-sm col-md-6" style="text-align: center;">
 						<h5 class="view-label">Profile View</h5>
 						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/profile.png" style="margin: 20px auto 0;">
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-xs-12 col-sm-6">
 				<div class="description-wrapper">
 					<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
+					<span class="strikethrough"><span>$599.00</span></span>
 					<span class="price">$499.00</span>
 					<?= get_post_meta(get_the_ID(), 'ski_paypal_embed', true); ?>
 					<h3>Dimensions</h3>
