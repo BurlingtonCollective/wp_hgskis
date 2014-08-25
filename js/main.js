@@ -55,32 +55,33 @@ $(function(){
 		$trigger.removeClass('open');
 	});
 
-	// $('button[name="subscribe"]').popover({
-	// 	trigger: 'manual',
-	// 	title: 'You\'ve been subscribed!',
-	// 	content: 'You can now rest easy knowing the best east coast ski content and deals are coming your way.'
-	// });
-	// $('form#mc-embedded-subscribe-form').on('submit', function(e){
-	// 	e.preventDefault();
-	// 	var $form = $(this),
-	// 			$input = $('#email-capture-field'),
-	// 			$honeypot = $('#gotcha');
-	// 	if($input.val() != '' && $honeypot.val() == ''){
-	// 		$.ajax({
-	// 			type: 'POST',
-	// 			url: $form.attr('action'),
-	// 			data: $form.serialize(),
-	// 			cache: false,
-	// 			dataType: 'json',
-	// 			contentType: "application/json; charset=utf-8",
-	// 			success: function(data){
-	// 				console.log(data);
-	// 				// if(data.result == 'success'){
-
-	// 				// }
-	// 			}
-	// 		});
-	// 	}
-	// });
+	$('#mc-embedded-subscribe-form').popover({
+		trigger: 'manual',
+		title: 'You\'ve been subscribed!',
+		content: 'You can now rest easy knowing the best East Coast ski content and deals are coming your way.',
+		placement: 'auto top'
+	});
+	$('form#mc-embedded-subscribe-form').on('submit', function(e){
+		e.preventDefault();
+		var $form = $(this),
+				$input = $('#email-capture-field'),
+				$honeypot = $('#gotcha');
+		if($input.val() != '' && $honeypot.val() == ''){
+			$.ajax({
+				type: 'post-json',
+				url: $form.attr('action')+'&c=?',
+				data: $form.serialize(),
+				cache: false,
+				dataType: 'jsonp',
+				contentType: "application/json; charset=utf-8",
+				success: function(data){
+					$('#mc-embedded-subscribe-form').popover('show');
+					setTimeout(function(){
+						$('#mc-embedded-subscribe-form').popover('hide');
+					}, 3000);
+				}
+			});
+		}
+	});
 
 });
