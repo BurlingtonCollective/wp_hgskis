@@ -156,7 +156,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 		</div>
 	</div>
 </section>
-<section id="warrenty" class="heading" style="margin-top:10px;">
+<section id="warranty" class="heading" style="margin-top:10px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -171,7 +171,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-8">
-				<p>We are a small company so we take all warranties very seriously and take care of them by a case to case scenario. Defects in materials or workmanship are covered for the practical lifetime of the product. If the skis do have craftsmanship or material defects it is HG Skis responsibility to repair or replace the product.</p>
+				<p>As a small company we take warranties very seriously. We review all product issues on a case to case basis. Defects in materials or workmanship will be reviewed, fix or replaced. Wear and tear is expected in our sport. We design skis to last for the practical lifetime of the product. For warranty issues or questions please email us at <a href="mailto:info@hgskis.com">info@hgskis.com</a>.</p>
 			</div>
 		</div>
 	</div>

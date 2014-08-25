@@ -49,7 +49,7 @@
 					<li><a href="#contact" class=""><span>Contact</span></a></li>
 					<li><a href="#history" class=""><span>History</span></a></li>
 					<li><a href="#retailers" class=""><span>Retailers</span></a></li>
-					<li><a href="#warrenty" class=""><span>Warrenty</span></a></li>
+					<li><a href="#warranty" class=""><span>Warranty</span></a></li>
 				</ul>
 			</div>
 		</nav>
