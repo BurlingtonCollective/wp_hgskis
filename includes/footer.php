@@ -1,7 +1,7 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-4">
+			<div class="col-xs-6 col-md-4">
 				<span class="footer-section-label">Contact</span>
 				<div class="inner contact">
 					<span>70 S. Winooski Ave #194</span>
@@ -9,36 +9,36 @@
 					<a href="mailto:info@hgskis.com">info@hgskis.com</a>
 				</div>
 			</div>
-			<div class="col-xs-4">
+			<div class="col-xs-6 col-md-4">
 				<span class="footer-section-label centered">Connect</span>
 				<div class="inner connect">
 					<div class="row">
-						<div class="col-xs-2">
+						<div class="col-xs-4 col-md-2">
 							<a href="http://facebook.com/hgskis" target="_blank">
 								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/facebook-full.png">
 							</a>
 						</div>
-						<div class="col-xs-2">
+						<div class="col-xs-4 col-md-2">
 							<a href="https://twitter.com/HG_Skis" target="_blank">
 								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/twitter-full.png">
 							</a>
 						</div>
-						<div class="col-xs-2">
+						<div class="col-xs-4 col-md-2">
 							<a href="http://vimeo.com/hgskis" target="_blank">
 								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/vimeo-full.png">
 							</a>
 						</div>
-						<div class="col-xs-2">
+						<div class="col-xs-4 col-md-2">
 							<a href="https://www.youtube.com/channel/UCp_6Y6Du7APG3Wdm1tuwNwA" target="_blank">
 								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/youtube-full.png">
 							</a>
 						</div>
-						<div class="col-xs-2">
+						<div class="col-xs-4 col-md-2">
 							<a href="http://instagram.com/hgskis" target="_blank">
 								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/instagram-full.png">
 							</a>
 						</div>
-						<div class="col-xs-2">
+						<div class="col-xs-4 col-md-2">
 							<a href="https://www.flickr.com/photos/111989921@N02/" target="_blank">
 								<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/social/flickr-full.png">
 							</a>
@@ -46,8 +46,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-4 clearfix">
-				<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/na-mark-footer-alt.jpg" style="float: right;">
+			<div class="hidden-xs hidden-sm col-md-4 clearfix">
+				<div class="inner create">
+					<img class="img-responsive" src="<?= get_template_directory_uri();?>/images/na-mark-footer-alt.jpg">
+				</div>
 			</div>
 		</div>
 	</div>

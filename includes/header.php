@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>HG Skis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Ek+Mukta:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/css/master.css">
@@ -10,7 +11,7 @@
 
 	<header>
 		<nav id="main-nav">
-			<a href="index.html" class="brand centered" style="background: transparent url(<?= get_template_directory_uri(); ?>/images/logo-box.png) center -18px no-repeat;">
+			<a href="<?= get_home_url(); ?>" class="brand centered">
 				<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/logo.png" style="margin-top: -18px;">
 			</a>
 			<button type="button" id="mobile-nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-collapse-target">
@@ -19,7 +20,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<div id="mobile-collapse-target" class="container collapse">
+			<div id="mobile-collapse-target" class="container collapse no-transition">
 				<ul class="main-nav nav-left">
 					<?php
 					wp_nav_menu(array(
