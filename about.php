@@ -24,7 +24,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 				<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/jim-gaeta-gibson.png" style="margin: 0 auto;">
 			</div>
 			<div class="col-xs-8 col-sm-6">
-				<div class="wysiwyg-content">
+				<div class="wysiwyg-content" style="margin-top: 30px;">
 					<?php the_content(); ?>
 				</div>
 			</div>
@@ -65,7 +65,8 @@ if(have_posts()) : while(have_posts()) : the_post();
 			<div class="col-xs-12 col-sm-4">
 				<div class="about-inner">
 					<div class="icon">
-						<i class="glyphicon glyphicon-envelope"></i>
+						<!-- <i class="glyphicon glyphicon-envelope"></i> -->
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/social/email-dark.png">
 					</div>
 					<div class="content">
 						<a href="mailto:info@hgskis.com">info@hgskis.com</a>
