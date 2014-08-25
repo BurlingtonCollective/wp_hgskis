@@ -62,7 +62,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 			</div>
 			<div id="sidebar" class="hidden-xs col-sm-4 col-md-3 col-md-push-1">
 				<?php
-					$adLink = get_post_meta(2111, 'wpcf-overview-ad-link', true);
+					$adLink = get_post_meta(2340, 'wpcf-overview-ad-link', true);
 					$external = strpos($adLink, 'hgskis.com', 0) !== false;
 				?>
 				<a href="<?= $adLink; ?>" <?= $external ? 'target="_blank"': ''; ?>>
