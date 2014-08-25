@@ -172,10 +172,10 @@ if (have_posts()) : while (have_posts()) : the_post();
 <section id="email-capture">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-8 col-md-7">
+			<div class="col-xs-12 col-sm-7">
 				<h3>Keep up with the East Coast's Finest</h3>
 			</div>
-			<div class="col-xs-12 col-sm-4 col-md-5">
+			<div class="col-xs-12 col-sm-5">
 				<form action="//hgskis.us5.list-manage.com/subscribe/post?u=810ab4864dd3bebc3a59b701b&amp;id=77d981dbf1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
 					<div class="input-group">
 						<input type="email" name="EMAIL" class="form-control" placeholder="your email here">

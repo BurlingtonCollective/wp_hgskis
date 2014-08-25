@@ -173,7 +173,7 @@ header{
 					clear: both;
 					background-color: @body-color;
 					background-image: url(../images/clean-gray-paper.png);
-					.box-shadow(inset 0px 0px 8px 4px fade(black, 30%));
+					.box-shadow(inset 0px 0px 20px -1px fade(black, 30%));
 					.main-nav{
 						// background: @background;
 						margin: 0;
@@ -193,14 +193,14 @@ header{
 								background: @red;
 							}
 						}
-						&:first-child{
-							padding-top: 0px;
-							li:first-child a{
-								border-top: none;
-							}
+						&:first-child li:first-child a{
+							border-top: none;
 						}
 					}
 				}
+			}
+			&#sub-nav{
+				display: none;
 			}
 		}
 	}

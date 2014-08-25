@@ -40,6 +40,11 @@ section{
 			&.right{
 				padding-left: 10px;
 			}
+			@media(max-width: @screen-sm-max){
+				&.left, &.right{
+					padding: 0;
+				}
+			}
 		}
 		h3{
 			text-transform: uppercase;
@@ -64,6 +69,9 @@ section{
 			text-transform: uppercase;
 			font-weight: 300;
 			line-height: 46px;
+			@media(max-width: @screen-sm-max){
+				font-size: unit(18/@font-size-base, em);
+			}
 			@media(max-width: @screen-xs-max){
 				padding-left: 0;
 			}
@@ -75,6 +83,9 @@ section{
 			border-radius: 0px;
 			font-size: unit(22/@font-size-base, em);
 			.mukta-stack();
+			@media(max-width: @screen-sm-max){
+				font-size: unit(18/@font-size-base, em);
+			}
 		}
 		button.btn{
 			height: 46px;
