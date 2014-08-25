@@ -62,7 +62,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-6 col-sm-4">
+			<div class="col-xs-12 col-sm-4">
 				<div class="about-inner">
 					<div class="icon">
 						<i class="glyphicon glyphicon-envelope"></i>
@@ -72,13 +72,13 @@ if(have_posts()) : while(have_posts()) : the_post();
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-6 col-sm-4">
+			<div class="col-xs-12 col-sm-4">
 				<div class="about-inner">
 					<div class="icon">
 						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/sticker-icon.png">
 					</div>
 					<div class="content">
-						<span>Send us a SASE and we'll send you stickers back!</span>
+						<span>Send us a self addressed and stamped envelope and we'll send you stickers back!</span>
 					</div>
 				</div>
 			</div>
