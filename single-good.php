@@ -9,7 +9,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1><a href="javascript:history.back()">&larr; Back</a></h1>
+				<h1><a href="http://hgskis.com/?page_id=2105">&larr; Back</a></h1>
 			</div>
 		</div>
 	</div>
