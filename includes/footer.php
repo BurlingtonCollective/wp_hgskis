@@ -57,7 +57,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<span>Copyright &copy;2014 | HG Skis | All rights reserved</span>
+					<span>Copyright &copy;2014 | HG Skis | All rights reserved - Dev: <a href="http://burlingtoncollective.com" target="_blank" style="color:#b6b7b8">Burlington Collective</a></span>
 				</div>
 			</div>
 		</div>
