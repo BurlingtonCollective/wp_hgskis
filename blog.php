@@ -35,7 +35,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 							// }
 							// echo $content;
 							$the_content = get_the_content();
-							if(strripos($the_content, '<!-- more -->') != false){
+							if(strripos($the_content, '<!--more-->') != false){
 								the_content();
 							}else{
 								the_excerpt();
