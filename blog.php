@@ -34,7 +34,12 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 							// 	$content .= '<p><a href="'.get_the_permalink().'">read more ...</a></p>';
 							// }
 							// echo $content;
-							the_excerpt();
+							$the_content = get_the_content();
+							if(strripos($the_content, '<!-- more -->') != false){
+								the_content();
+							}else{
+								the_excerpt();
+							}
 							?>
 						</div>
 						<!-- <a href="<?php the_permalink(); ?>">read more ...</a> -->
