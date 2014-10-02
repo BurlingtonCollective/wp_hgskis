@@ -14,7 +14,7 @@ add_theme_support('post-thumbnails', array('post', 'page', 'team_member', 'produ
 add_image_size('gallery-crop', 100, 100, true);
 
 function new_excerpt_more( $more ) {
-	return ' <small> ~ [<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('read more', 'your-text-domain') . '</a>]</small>';
+	return ' <small><a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Continue reading <span class="meta-nav">&rarr;</span></a></small>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 

@@ -12,6 +12,8 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 			<div class="col-xs-12 col-sm-8">
 				<?php
 				if($media->have_posts()): while($media->have_posts()): $media->the_post();
+				global $more;
+				$more = 0;
 				$categories = wp_get_post_categories(get_the_ID(), array('fields'=>'slugs'));
 				$vimeo_embed = get_post_meta(get_the_ID(), 'vimeo_embed', true);
 				?>
@@ -35,11 +37,23 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 							// }
 							// echo $content;
 							$the_content = get_the_content();
-							if(strripos($the_content, '<!--more-->') != false){
-								the_content();
-							}else{
-								the_excerpt();
-							}
+							error_log(strripos($post->post_content, '<!--more-->') === false);
+							if( strpos( $post->post_content, '<!--more-->' ) ) {
+					        error_log('content');
+									the_content('Continue reading <span class="meta-nav">&rarr;</span>');
+					    }
+					    else {
+					        error_log('excerpt');
+					        the_excerpt();
+					    }
+							// if( strpos( get_the_content(), 'more-link' ) === false ) {
+							// 		error_log('excerpt');
+					  //       the_excerpt();
+					  //   }
+					  //   else {
+					  //       error_log('content');
+							// 		the_content('Continue reading <span class="meta-nav">&rarr;</span>');
+					  //   }
 							?>
 						</div>
 						<!-- <a href="<?php the_permalink(); ?>">read more ...</a> -->
