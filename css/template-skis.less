@@ -10,13 +10,17 @@ section{
 			}
 			&.switcheroo{
 				cursor: pointer;
-				img.img-responsive, .view-label span{
+				i{
+					font-size: .8em;
+				}
+				img.img-responsive, .view-label span, .view-label i{
+					display: block;
 					&.show-hover{
 						display: none;
 					}
 				}
 				&:hover{
-					img.img-responsive, .view-label span{
+					img.img-responsive, .view-label span, .view-label i{
 						display: none;
 						&.show-hover{
 							display: block;

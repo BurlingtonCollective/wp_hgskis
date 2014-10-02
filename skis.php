@@ -21,7 +21,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
 						<div class="product-wrapper switcheroo">
-							<h5 class="view-label"><strong class="visible-xs">Stinger </strong><span>Topsheets</span><span class="show-hover">Base</span></h5>
+							<h5 class="view-label"><strong class="visible-xs">Stinger </strong><span>Topsheet</span><span class="show-hover">Base</span><i>Rollover for Base</i><i class="show-hover">Rollover for Topsheet</i></h5>
 							<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/topsheet.png">
 							<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/stinger/base-cropped.png">
 						</div>
