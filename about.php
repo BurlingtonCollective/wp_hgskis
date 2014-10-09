@@ -20,12 +20,12 @@ if(have_posts()) : while(have_posts()) : the_post();
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-4 col-sm-3">
+			<div class="col-xs-6 col-sm-3">
 				<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/jim-gaeta-gibson.png" style="margin: 0 auto;">
 			</div>
-			<div class="col-xs-8 col-sm-6">
-				<div class="wysiwyg-content" style="margin-top: 30px; text-align:center;">
-					<p>“HG Skis is the east coast’s premier up and coming ski company. We represent the core scene that is the true east coast. Our skis and products are developed from skiers like you, for you."</p>
+			<div class="col-xs-6 col-sm-6">
+				<div class="wysiwyg-content">
+					<?php the_content(); ?>
 				</div>
 			</div>
 			<div class="hidden-xs col-sm-3">
@@ -113,6 +113,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 					Since then, Connor has developed into a major component of 
 					the company. The two of us are very different people, but we share one major thing in common. We are crazy about skiing, and want to bring innovation to the sport in anyway possible.<br><br>
 					Currently we work out of a garage in Burlington, Vermont. We live in your neighborhood, and we are building our favorite skis for you.<br><br>
+					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/harrison-signature.png" style="max-width: 200px; margin-bottom: 20px;">
 					-Harrison G, founder of HG Skis
 				</p>
 			</div>
@@ -171,7 +172,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-8">
-				<p>As a small company we take warranties very seriously. We review all product issues on a case to case basis. Defects in materials or workmanship will be reviewed, fix or replaced. Wear and tear is expected in our sport. We design skis to last for the practical lifetime of the product. For warranty issues or questions please email us at <a href="mailto:info@hgskis.com">info@hgskis.com</a>.</p>
+				<p>As a small company we take warranties very seriously. We review all product issues on a case to case basis. Defects in materials or workmanship will be reviewed, fixed or replaced. Wear and tear is expected in our sport. We design skis to last for the practical lifetime of the product. For warranty issues or questions please email us at <a href="mailto:info@hgskis.com">info@hgskis.com</a>.</p>
 			</div>
 		</div>
 	</div>

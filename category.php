@@ -31,17 +31,23 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 					<div class="content">
 						<div class="wysiwyg-content">
 							<?php 
-							$content = apply_filters( 'the_content', get_the_content() );
-							$content = str_replace( ']]>', ']]&gt;', $content );
-							$startPosition = strripos($content,'</p>');
-							if($startPosition !== false){
-								$stringLength = 4;
-								$content = substr_replace($content, $replacement, $startPosition, $stringLength);
-								$replacement = '  <a href="'.get_the_permalink().'">read more...</a></p>';
+							// $content = apply_filters( 'the_content', get_the_content() );
+							// $content = str_replace( ']]>', ']]&gt;', $content );
+							// $startPosition = strripos($content,'</p>');
+							// if($startPosition !== false){
+							// 	$stringLength = 4;
+							// 	$content = substr_replace($content, $replacement, $startPosition, $stringLength);
+							// 	$replacement = '  <a href="'.get_the_permalink().'">read more...</a></p>';
+							// }else{
+							// 	$content .= '<p><a href="'.get_the_permalink().'">read more ...</a></p>';
+							// }
+							// echo $content;
+							$the_content = get_the_content();
+							if(strpos($post->post_content, '<!--more-->')){
+								the_content('Continue reading <span clall="meta-nav">&rarr;</span>');
 							}else{
-								$content .= '<p><a href="'.get_the_permalink().'">read more ...</a></p>';
+								the_excerpt();
 							}
-							echo $content;
 							?>
 						</div>
 						<!-- <a href="<?php the_permalink(); ?>">read more ...</a> -->
@@ -64,7 +70,9 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 				endwhile; endif;
 				?>
 				<ul class="pager">
-				  <li class="previous"><?php next_posts_link( '&larr; Older Titles', $media->max_num_pages); ?></li>
+				  <li class="previous"><?php 
+				  error_log('max num pages: '.$media->max_num_pages);
+				  next_posts_link( '&larr; Older Titles'); ?></li>
 				  <li class="next"><?php previous_posts_link( 'Newer Titles &rarr;'); ?></li>
 				</ul>
 			</div>
@@ -87,7 +95,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 				</ul>
 				<h4>Archive</h4>
 				<ul class="nav nav-stacked">
-					<?php wp_get_archives(array('limit'=>8)); ?>
+					<?php wp_get_archives(array()); ?>
 				</ul>
 			</div>
 		</div>

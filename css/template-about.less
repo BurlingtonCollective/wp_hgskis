@@ -1,3 +1,24 @@
+section#about + section{
+	.wysiwyg-content{
+		margin-top: 30px;
+		@media(min-width: @screen-lg-min){
+			margin-top: 90px;
+		}
+		@media(max-width: @screen-md-max){
+			margin-top: 68px;
+		}
+		@media(max-width: @screen-sm-max){
+			margin-top: 40px;
+		}
+		@media(max-width: @screen-xs-max){
+			margin-top: 40px;
+		}
+		@media(max-width: 570px){
+			margin-top: 20px;
+		}
+	}
+}
+
 .about-inner{
 	display: table;
 	min-height: 90px;

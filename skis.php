@@ -88,6 +88,26 @@ if (have_posts()) : while (have_posts()) : the_post();
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
+									<a href="#panel-7" data-toggle="collapse" data-parent="#technology">
+										<img class="img-responsive initial" src="<?= get_template_directory_uri(); ?>/images/stinger/techicons/pop.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/stinger/techicons/pop-rollover.png">
+										<span>Champagne Pop</span>
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse" id="panel-7">
+								<div class="panel-body">
+									<ul>
+										<li>More pop than a bottle of grand vintage on Birdman's birthday.</li>
+										<li>Our camber will get you higher.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
 									<a href="#panel-1" data-toggle="collapse" data-parent="#technology">
 										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/mona.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/mona-rollover.png">
 										<span>Art Attack</span>
