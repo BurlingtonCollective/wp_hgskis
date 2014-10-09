@@ -73,7 +73,7 @@ include_once('includes/header.php');
 				</ul>
 				<h4>Archive</h4>
 				<ul class="nav nav-stacked">
-					<?php wp_get_archives(array('limit'=>8)); ?>
+					<?php wp_get_archives(array()); ?>
 				</ul>
 			</div>
 		</div>
