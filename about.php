@@ -24,8 +24,8 @@ if(have_posts()) : while(have_posts()) : the_post();
 				<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/jim-gaeta-gibson.png" style="margin: 0 auto;">
 			</div>
 			<div class="col-xs-8 col-sm-6">
-				<div class="wysiwyg-content" style="margin-top: 30px;">
-					<?php the_content(); ?>
+				<div class="wysiwyg-content" style="margin-top: 30px; text-align:center;">
+					<p>“HG Skis is the east coast’s premier up and coming ski company. We represent the core scene that is the true east coast. Our skis and products are developed from skiers like you, for you."</p>
 				</div>
 			</div>
 			<div class="hidden-xs col-sm-3">
@@ -79,7 +79,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/sticker-icon.png">
 					</div>
 					<div class="content">
-						<span>Send us a self addressed and stamped envelope and we'll send you stickers back!</span>
+						<span>Send us a self addressed and stamped envelope and then we'll send you stickers back!</span>
 					</div>
 				</div>
 			</div>

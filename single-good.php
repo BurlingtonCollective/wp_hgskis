@@ -39,7 +39,6 @@ if (have_posts()) : while (have_posts()) : the_post();
 					echo types_render_field('paypal-form', array('output'=>'raw')); 
 					?>
 					<div class="wysiwyg-content additional">
-						<p>Shipping by October 1st</p>
 						<?php
 						echo types_render_field('additional-information', array());
 						?>

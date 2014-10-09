@@ -99,7 +99,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 				</ul>
 				<h4>Archive</h4>
 				<ul class="nav nav-stacked">
-					<?php wp_get_archives(array('limit'=>8)); ?>
+					<?php wp_get_archives(array()); ?>
 				</ul>
 			</div>
 		</div>

@@ -168,7 +168,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 								<h4 class="panel-title">
 									<a href="#panel-5" data-toggle="collapse" data-parent="#technology">
 										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/fatty-edges.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/fatty-edges-rollover.png">
-										<span>Fat Edges</span>
+										<span>Fat Ass Edges</span>
 										<i class="glyphicon glyphicon-chevron-down"></i>
 										<i class="glyphicon glyphicon-chevron-right"></i>
 									</a>
@@ -196,7 +196,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 							<div class="panel-collapse collapse" id="panel-6">
 								<div class="panel-body">
 									<ul>
-										<li>It's cool to ski backwards.</li>
+										<li>It's fun to ski backwards.</li>
 										<li>Fully symmetric ski - feels like freedom.</li>
 									</ul>
 								</div>
