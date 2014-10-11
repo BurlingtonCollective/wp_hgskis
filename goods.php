@@ -21,13 +21,15 @@ include_once('includes/header.php');
 			<?php
 			$goods = new WP_Query(array('post_type'=>'good', 'posts_per_page'=>-1));
 			if($goods->have_posts()): while($goods->have_posts()): $goods->the_post();
+			error_log(types_render_field('sold-out', array('output' => 'raw')));
 			?>
 			<div class="col-xs-6 col-sm-3">
 				<div class="good-wrapper">
-					<a href="<?php the_permalink(); ?>">
+					<a href="<?php the_permalink(); ?>" <?= (types_render_field('sold-out', array('output' => 'raw'))) ? 'class="sold-out"' : ''; ?>>
 						<?php
 						echo types_render_field('main-image', array('class'=>'img-responsive', 'alt'=>get_the_title()));
 						?>
+						<div class="sold-out-indicator"><span>Sold Out</span></div>
 						<h4 style="text-align: center;"><?php the_title();?></h4>
 					</a>
 				</div>

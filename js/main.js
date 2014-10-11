@@ -84,6 +84,9 @@ $(function(){
 			});
 		}
 	});
+	$('#goods .sold-out').on('click', function(e){
+		e.preventDefault();
+	});
 	//EMAIL
 	// $('form#mc-embedded-subscribe-form').on('submit', function(e){
 	// 	e.preventDefault();
