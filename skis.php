@@ -205,6 +205,25 @@ if (have_posts()) : while (have_posts()) : the_post();
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h4 class="panel-title">
+									<a href="#panel-8" data-toggle="collapse" data-parent="#technology">
+										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/early-edge.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/early-edge-rollover.png">
+										<span>Early End Edge</span>
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse" id="panel-8">
+								<div class="panel-body">
+									<ul>
+										<li>Our edges end below the contact point of the ski.  This reduces pressure in the tips, preventing edge blowouts.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
 									<a href="#panel-6" data-toggle="collapse" data-parent="#technology">
 										<img class="img-responsive initial" src="<?= get_template_directory_uri();?>/images/stinger/techicons/symmetrical.png"><img class="img-responsive show-hover" src="<?= get_template_directory_uri();?>/images/stinger/techicons/symmetrical-rollover.png">
 										<span>Symmetric Design</span>
