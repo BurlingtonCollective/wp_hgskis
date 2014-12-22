@@ -101,7 +101,7 @@ include_once('includes/header.php');
 			</div>
 			<div class="col-xs-6 col-md-3">
 				<div class="member-wrapper">
-					<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/family/sam-alt.png">
+					<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/family/sam-alt-bab.png">
 					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/family/sam.png">
 				</div>
 			</div>
