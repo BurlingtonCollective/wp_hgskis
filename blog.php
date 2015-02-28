@@ -86,7 +86,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 					$external = strpos($adLink, 'hgskis.com', 0) === false;
 				?>
 				<a href="<?= $adLink; ?>" <?= $external ? 'target="_blank"': ''; ?>>
-					<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/vermonts-finest.jpg">
+					<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/Last-chance-2015-stinger.jpg">
 				</a>
 				<h4>Categories</h4>
 				<ul class="nav nav-stacked">

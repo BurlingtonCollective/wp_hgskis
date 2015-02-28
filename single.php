@@ -60,7 +60,7 @@ include_once('includes/header.php');
 					$external = strpos($adLink, 'hgskis.com') === false;
 				?>
 				<a href="<?= $adLink; ?>" <?= $external ? 'target="_blank"': ''; ?>>
-					<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/queen-city.jpg">
+					<img class="img-responsive ad" src="<?= get_template_directory_uri(); ?>/images/blogads/Central-Hoodie.jpg">
 				</a>
 				<h4>Categories</h4>
 				<ul class="nav nav-stacked">
