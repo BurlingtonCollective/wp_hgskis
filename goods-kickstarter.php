@@ -21,17 +21,17 @@ include_once('includes/header.php');
                 <div class="col-xs-6 col-sm-3">
                     <div class="good-wrapper">
                         <a href="https://www.kickstarter.com/projects/hgskis/new-models-from-hg-skis-a-company-focused-on-durab" target="_blank">
-                            <img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/kickstarter/central-olive.png">
+                            <img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/kickstarter/central-yellow.png">
                         </a>
-                        <h4 style="text-align:center;">Central Tee - Olive</h4>
+                        <h4 style="text-align:center;">Central Tee - Yellow</h4>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3">
                     <div class="good-wrapper">
                         <a href="https://www.kickstarter.com/projects/hgskis/new-models-from-hg-skis-a-company-focused-on-durab" target="_blank">
-                            <img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/kickstarter/central-yellow.png">
+                            <img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/kickstarter/central-olive.png">
                         </a>
-                        <h4 style="text-align:center;">Central Tee - Yellow</h4>
+                        <h4 style="text-align:center;">Central Tee - Olive</h4>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3">
