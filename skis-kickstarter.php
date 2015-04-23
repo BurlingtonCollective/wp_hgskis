@@ -8,7 +8,7 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1>Park</h1>
+                <h1>2016 Skis Now Available</h1>
             </div>
         </div>
     </div>
