@@ -19,13 +19,13 @@ if (have_posts()) : while (have_posts()) : the_post();
 		<div class="row">
 			<div class="col-xs-6">
 				<h2>Stinger</h2>
-				<a href="/?page_id=2338">
+				<a href="http://hgskis.com/?page_id=2338">
 					<img class="img-responsive" src="http://hgskis.com/wp-content/uploads/2015/04/Stinger.jpg">
 				</a>
 			</div>
 			<div class="col-xs-6">
 				<h2>EL</h2>
-				<a href="/?page_id=2818">
+				<a href="http://hgskis.com/?page_id=2815">
 					<img class="img-responsive" src="http://hgskis.com/wp-content/uploads/2015/04/El.jpg">
 				</a>
 			</div>
