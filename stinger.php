@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Skis Page
+Template Name: Stinger Template
 */
 include_once('includes/header.php');
 if (have_posts()) : while (have_posts()) : the_post();
@@ -18,16 +18,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<div class="product-wrapper">
-							<img class="img-responsive" src="http://hgskis.com/wp-content/uploads/2015/04/Stinger.png">
-						</div>
-					</div>
-					<div class="hidden-xs hidden-sm col-md-6" style="text-align: center;">
-						<h5 class="view-label">Profile View</h5>
-						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/profile.png" style="margin: 20px auto 0;">
-					</div>
+				<div class="product-wrapper">
+					<img class="img-responsive" src="http://hgskis.com/wp-content/uploads/2015/04/Stinger.jpg">
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
@@ -234,6 +226,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 								</div>
 							</div>
 						</div>
+					</div>
+					<div data-fitvids-target>
+						<iframe src="https://player.vimeo.com/video/125213229?color=fcfcfc&byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
