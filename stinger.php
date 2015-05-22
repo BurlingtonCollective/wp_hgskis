@@ -9,7 +9,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1>Camber Ski</h1>
+				<h1>Full Camber Park Ski</h1>
 			</div>
 		</div>
 	</div>
@@ -18,8 +18,18 @@ if (have_posts()) : while (have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
-				<div class="product-wrapper">
-					<img class="img-responsive" src="http://hgskis.com/wp-content/uploads/2015/04/Stinger.jpg">
+				<div class="row product-wrapper">
+					<div class="col-xs-6">
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/topsheet.png">
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/2015/topsheet.png">
+					</div>
+					<div class="col-xs-6">
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/base.png">
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/2015/base.png">
+					</div>
+				</div>
+				<div class="hidden-xs" data-fitvids-target>
+					<iframe src="https://player.vimeo.com/video/125213229?color=fcfcfc&byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
@@ -27,7 +37,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<h2>Stinger</h2>
 					<p>The legend continues. Our famous park &amp; all-mountain ripper is now coming in a longer and shorter length. The Stinger has an absurd amount of pop due to its traditional full camber construction. When you combine this with its aggressive side cut, you get a ski that shoots you in and out of turns like no other. We recommend the Stinger for park skiers searching for a lightweight, poppy ski.</p>
 					<span class="price">Preorder: $450.00</span>
-					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin-bottom: 40px;">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="MU8Y29EYE4E92">
 						<table>
@@ -227,7 +237,11 @@ if (have_posts()) : while (have_posts()) : the_post();
 							</div>
 						</div>
 					</div>
-					<div data-fitvids-target>
+					<h3>Reviews</h3>
+					<div class="product-wrapper">
+						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/review-quotes.png">
+					</div>
+					<div class="visible-xs" data-fitvids-target>
 						<iframe src="https://player.vimeo.com/video/125213229?color=fcfcfc&byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
