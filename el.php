@@ -33,7 +33,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 				<div class="description-wrapper">
 					<h2>EL</h2>
 					<p>Most powder skis were designed for Alaska with huge open lines and neck deep snow.  We've developed a ski for the rest of us.  One which is just as floaty, but nimble enough to navigate the tightest tree runs.  The EL has a tight sidecut that lets you bring the ski onto groomers without noticing you're on a ski designed with powder in mind.  We recommend bringing the EL everywhere, from east coast glades to west coast big mountain backcountry.  The EL has all the same durability and carving technologies as our other skis.</p>
-					<span class="price">$450.00</span>
+					<span style="font-size: 11px; display: block;">Free Shipping</span>
+					<span class="price" style="font-size: 24px;"><span style="color: #1d621a;">Preorder Price: $450.00</span> - 1 Week Only (MSRP $599)</span>
 					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin-bottom: 40px;">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="YENRL7A2CWQAW">
