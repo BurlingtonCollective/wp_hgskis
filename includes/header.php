@@ -7,6 +7,25 @@
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Ek+Mukta:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/css/master.css">
+	<style>
+		#product.overview .wrapper-left {
+			padding-right: 50px;
+		}
+
+		#product.overview .wrapper-right {
+			padding-left: 50px;
+		}
+
+		@media(max-width: 991px) {
+			#product.overview .wrapper-left, #product.overview .wrapper-right {
+				padding: 0;
+			}
+
+			#product.overview .wrapper-right {
+				padding-top: 40px;
+			}
+		}
+	</style>
 </head>
 <body>
 
