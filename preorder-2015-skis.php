@@ -9,7 +9,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1>HG Skis 15/16 Arsenal <span class="pull-right" style="color: #1d621a; text-transform: uppercase;">Pre-order now open - 1 Week Only</span></h1>
+				<h1>HG Skis 15/16 Arsenal <span class="pull-right" style="color: #1d621a; text-transform: uppercase;">Pre-order now open</span></h1>
 			</div>
 		</div>
 	</div>
