@@ -34,7 +34,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 			</div>
 			<div class="col-xs-12 col-sm-6">
 				<div class="description-wrapper">
-					<h2>Stinger</h2>
+					<h2>Subway Stinger</h2>
 					<p>The legend continues. Our famous park &amp; all-mountain ripper is now coming in a longer and shorter length. The Stinger has an absurd amount of pop due to its traditional full camber construction. When you combine this with its aggressive side cut, you get a ski that shoots you in and out of turns like no other. We recommend the Stinger for park skiers searching for a lightweight, poppy ski.</p>
 					<span style="font-size: 11px; display: block;">Free Shipping</span>
 					<span class="price" style="font-size: 24px;"><span style="color: #1d621a;">Preorder Price: $499.00</span> (MSRP $599)</span>
