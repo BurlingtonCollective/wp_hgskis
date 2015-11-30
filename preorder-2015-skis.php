@@ -18,12 +18,12 @@ if (have_posts()) : while (have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<div class="wrapper wrapper-left">
-					<h2 style="text-align: right; font-size: 18px;"><img class="img-responsive pull-left" src="<?= get_template_directory_uri(); ?>/images/stinger/title-logo.png" alt="Stinger"><span style="display: block; font-size: 12px; line-height: 14px; margin-bottom: 6px;">Tall T Stinger</span>Full Camber Park Ski (178cm)</h2>
-					<a href="http://hgskis.com/?page_id=2866" style="display: block; padding-top: 20px;">
-						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/tall-t/saffari-horz.png">
-					</a>
-				</div>
+<!--				<div class="wrapper wrapper-left">-->
+<!--					<h2 style="text-align: right; font-size: 18px;"><img class="img-responsive pull-left" src="--><?//= get_template_directory_uri(); ?><!--/images/stinger/title-logo.png" alt="Stinger"><span style="display: block; font-size: 12px; line-height: 14px; margin-bottom: 6px;">Tall T Stinger</span>Full Camber Park Ski (178cm)</h2>-->
+<!--					<a href="http://hgskis.com/?page_id=2866" style="display: block; padding-top: 20px;">-->
+<!--						<img class="img-responsive" src="--><?//= get_template_directory_uri(); ?><!--/images/tall-t/saffari-horz.png">-->
+<!--					</a>-->
+<!--				</div>-->
 				<div class="wrapper wrapper-left">
 					<h2 style="text-align: right; font-size: 18px;"><img class="img-responsive pull-left" src="<?= get_template_directory_uri(); ?>/images/stinger/title-logo.png" alt="Stinger"><span style="display: block; font-size: 12px; line-height: 14px; margin-bottom: 6px;">Subway Stinger</span>Full Camber Park Ski (178cm)</h2>
 					<a href="http://hgskis.com/?page_id=2338" style="display: block; padding-top: 20px;">
