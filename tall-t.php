@@ -37,7 +37,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<h2>Tall T Safari</h2>
 					<p>The Safari is a limited edition Tall T Productions graphic on our tried and true flagship model, the Stinger. The Safari has an absurd amount of pop due to its traditional full camber construction. When you combine this with its aggressive side cut, you get a ski that shoots you in and out of turns like no other. We recommend the Safari for park skiers searching for a lightweight, poppy ski.</p>
 					<span style="font-size: 11px; display: block;">Free Shipping</span>
-					<span class="price" style="font-size: 24px;">$649.00</span>
+					<span class="price" style="font-size: 24px;"><span style="color: #1d621a;">Preorder: $649.00</span></span>
 					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="JTGTJPUNYHM8L">
