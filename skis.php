@@ -37,33 +37,11 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
 					<!-- <span class="strikethrough"><span>$599.00</span></span> -->
-					<span class="price">$400.00</span>
+					<span style="font-size: 11px; display: block;">Free Shipping</span>
+					<span class="price"><span style="color: #1d621a;">Preorder: $400.00</span></span>
 					<?= get_post_meta(get_the_ID(), 'ski_paypal_embed', true); ?>
 					<h3>Dimensions</h3>
-					<table class="table table-striped">
-						<tbody>
-							<tr>
-								<td>Length</td>
-								<td>169 cm</td>
-								<td>178 cm</td>
-							</tr>
-							<tr>
-								<td>Tip - Waist - Tail</td>
-								<td>123 - 96 - 123 mm</td>
-								<td>125 - 96 - 125 mm</td>
-							</tr>
-							<tr>
-								<td>Turning Radius</td>
-								<td>18 m</td>
-								<td>18 m</td>
-							</tr>
-							<tr>
-								<td>Camber</td>
-								<td>12 mm</td>
-								<td>12 mm</td>
-							</tr>
-						</tbody>
-					</table>
+					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/2015/spitfire/infographic.jpg">
 					<h3>Technology</h3>
 					<div class="panel-group" id="technology">
 						<div class="panel panel-default">

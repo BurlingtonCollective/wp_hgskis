@@ -29,13 +29,13 @@ if (have_posts()) : while (have_posts()) : the_post();
 					</div>
 				</div>
 				<div class="hidden-xs" data-fitvids-target>
-					<iframe src="https://player.vimeo.com/video/125213229?color=fcfcfc&byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe src="https://player.vimeo.com/video/124985180?color=fcfcfc&byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
 				<div class="description-wrapper">
-					<h2>Tall T Stinger</h2>
-					<p>The legend continues. Our famous park &amp; all-mountain ripper is now coming in a longer and shorter length. The Stinger has an absurd amount of pop due to its traditional full camber construction. When you combine this with its aggressive side cut, you get a ski that shoots you in and out of turns like no other. We recommend the Stinger for park skiers searching for a lightweight, poppy ski.</p>
+					<h2>Tall T Safari</h2>
+					<p>The Safari is a limited edition Tall T Productions graphic on our tried and true flagship model, the Stinger. The Safari has an absurd amount of pop due to its traditional full camber construction. When you combine this with its aggressive side cut, you get a ski that shoots you in and out of turns like no other. We recommend the Safari for park skiers searching for a lightweight, poppy ski.</p>
 					<span style="font-size: 11px; display: block;">Free Shipping</span>
 					<span class="price" style="font-size: 24px;">$649.00</span>
 					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -50,7 +50,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 					</form>
 					<h3>Dimensions</h3>
-					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/specs.jpg">
+					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/tall-t/infographic.jpg">
 					<h3>Technology</h3>
 					<div class="panel-group" id="technology">
 						<div class="panel panel-default">
@@ -229,12 +229,18 @@ if (have_posts()) : while (have_posts()) : the_post();
 							</div>
 						</div>
 					</div>
+					<h3>Tall T x HG Skis Shirt</h3>
+					<div>
+						<a href="http://hgskis.com/?page_id=2105">
+							<img class="img-responsive" src="http://hgskis.com/wp-content/uploads/2015/10/TALLT_FEATURED_BANNER_ROLLOVER.jpg">
+						</a>
+					</div>
 					<h3>Reviews</h3>
 					<div class="product-wrapper">
 						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/review-quotes.png">
 					</div>
 					<div class="visible-xs" data-fitvids-target>
-						<iframe src="https://player.vimeo.com/video/125213229?color=fcfcfc&byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/124985180?color=fcfcfc&byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
