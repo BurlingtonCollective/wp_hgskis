@@ -38,6 +38,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<p>The legend continues. Our famous park &amp; all-mountain ripper is now coming in a longer and shorter length. The Stinger has an absurd amount of pop due to its traditional full camber construction. When you combine this with its aggressive side cut, you get a ski that shoots you in and out of turns like no other. We recommend the Stinger for park skiers searching for a lightweight, poppy ski.</p>
 					<span style="font-size: 11px; display: block;">Free Shipping</span>
 					<span class="price" style="font-size: 24px;"><span style="color: #1d621a;">Preorder: $499.00</span> (MSRP $599)</span>
+					<span style="font-size: 11px; display: block; margin-bottom: 11px;">Expected Ship Date: December 18th</span>
 					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="MU8Y29EYE4E92">

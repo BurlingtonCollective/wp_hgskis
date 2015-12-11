@@ -30,6 +30,12 @@ if (have_posts()) : while (have_posts()) : the_post();
 				</div>
 				<div class="hidden-xs" data-fitvids-target>
 					<iframe src="https://player.vimeo.com/video/124985180?color=fcfcfc&byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<h3>Tall T x HG Skis Shirt</h3>
+					<div>
+						<a href="http://hgskis.com/?page_id=2105">
+							<img class="img-responsive" src="http://hgskis.com/wp-content/uploads/2015/10/IMG_5772.png">
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
@@ -38,6 +44,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<p>The Safari is a limited edition Tall T Productions graphic on our tried and true flagship model, the Stinger. The Safari has an absurd amount of pop due to its traditional full camber construction. When you combine this with its aggressive side cut, you get a ski that shoots you in and out of turns like no other. We recommend the Safari for park skiers searching for a lightweight, poppy ski.</p>
 					<span style="font-size: 11px; display: block;">Free Shipping</span>
 					<span class="price" style="font-size: 24px;"><span style="color: #1d621a;">Preorder: $649.00</span></span>
+					<span style="font-size: 11px; display: block; margin-bottom: 11px;">Expected Ship Date: December 18th</span>
 					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="JTGTJPUNYHM8L">
@@ -229,18 +236,18 @@ if (have_posts()) : while (have_posts()) : the_post();
 							</div>
 						</div>
 					</div>
-					<h3>Tall T x HG Skis Shirt</h3>
-					<div>
-						<a href="http://hgskis.com/?page_id=2105">
-							<img class="img-responsive" src="http://hgskis.com/wp-content/uploads/2015/10/TALLT_FEATURED_BANNER_ROLLOVER.jpg">
-						</a>
-					</div>
 					<h3>Reviews</h3>
 					<div class="product-wrapper">
 						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/review-quotes.png">
 					</div>
 					<div class="visible-xs" data-fitvids-target>
 						<iframe src="https://player.vimeo.com/video/124985180?color=fcfcfc&byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<h3>Tall T x HG Skis Shirt</h3>
+						<div>
+							<a href="http://hgskis.com/?page_id=2105">
+								<img class="img-responsive" src="http://hgskis.com/wp-content/uploads/2015/10/IMG_5772.png">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

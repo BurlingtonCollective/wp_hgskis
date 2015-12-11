@@ -39,6 +39,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 					<!-- <span class="strikethrough"><span>$599.00</span></span> -->
 					<span style="font-size: 11px; display: block;">Free Shipping</span>
 					<span class="price"><span style="color: #1d621a;">Preorder: $400.00</span></span>
+					<span style="font-size: 11px; display: block; margin-bottom: 11px;">Ships Immediately</span>
 					<?= get_post_meta(get_the_ID(), 'ski_paypal_embed', true); ?>
 					<h3>Dimensions</h3>
 					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/stinger/2015/spitfire/infographic.jpg">
