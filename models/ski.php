@@ -60,6 +60,7 @@ class Ski {
         $this->showTechnologyPanel = boolval(types_render_field('ski-show-technology-panel', array('output'=>'raw')));
         $this->showReviewsImage = boolval(types_render_field('ski-show-reviews-image', array('output'=>'raw')));
         $this->reviewsImage = types_render_field('ski-reviews-image', array('output'=>'raw'));
+        $this->showProductSlideshow = boolval(types_render_field('ski-show-product-slideshow', array('output'=>'raw')));
 
         $this->showAd = boolval(types_render_field('ski-show-ad', array('output'=>'raw')));
         $this->adTitle = types_render_field('ski-ad-title', array('output'=>'raw'));

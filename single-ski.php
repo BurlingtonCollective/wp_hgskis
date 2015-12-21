@@ -254,6 +254,45 @@ $ski = new Ski(); ?>
                         <h3>Reviews</h3>
                         <img class="img-responsive" src="<?= $ski->reviewsImage; ?>">
                     <?php endif; ?>
+                    <?php if ($ski->showProductSlideshow) : ?>
+                        <div id="product-slider" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#product-slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#product-slider" data-slide-to="1"></li>
+                                <li data-target="#product-slider" data-slide-to="2"></li>
+                                <li data-target="#product-slider" data-slide-to="3"></li>
+                                <li data-target="#product-slider" data-slide-to="4"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos1.jpg" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos2.jpg" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos3.jpg" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos4.jpg" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="<?= get_template_directory_uri(); ?>/images/stinger/Stinger-photos5.jpg" alt="...">
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#product-slider" role="button" data-slide="prev">
+                                <span></span>
+                            </a>
+                            <a class="right carousel-control" href="#product-slider" role="button" data-slide="next">
+                                <span></span>
+                            </a>
+                        </div>
+                    <?php endif; ?>
                     <div class="visible-xs" data-fitvids-target>
                         <?php if ($ski->showVimeoEmbed) : ?>
                             <?= $ski->vimeoEmbed; ?>
