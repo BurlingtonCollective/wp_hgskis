@@ -62,9 +62,7 @@ $ski = new Ski(); ?>
                     <?php if ($ski->shipDateKnown && !$ski->isBackordered) : ?>
                         <span class="expected-ship-date">Expected Ship Date: <?= $ski->expectedShipDate; ?></span>
                     <?php endif; ?>
-
                     <?= $ski->paypalForm; ?>
-
                     <?php if ($ski->showDimensionsImage) : ?>
                         <h3>Dimensions</h3>
                         <img class="img-responsive" src="<?= $ski->dimensionsImage; ?>">
