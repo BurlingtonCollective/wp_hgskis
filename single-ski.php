@@ -56,7 +56,10 @@ $ski = new Ski(); ?>
                             (MSRP <?= $ski->msrpPrice; ?>)
                         <?php endif; ?>
                     </span>
-                    <?php if ($ski->shipDateKnown) : ?>
+                    <?php if ($ski->isBackordered) : ?>
+                        <span class="expected-ship-date"><?= $ski->backorderMessage; ?></span>
+                    <?php endif; ?>
+                    <?php if ($ski->shipDateKnown && !$ski->isBackordered) : ?>
                         <span class="expected-ship-date">Expected Ship Date: <?= $ski->expectedShipDate; ?></span>
                     <?php endif; ?>
 

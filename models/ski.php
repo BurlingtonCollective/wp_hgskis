@@ -20,6 +20,8 @@ class Ski {
         $this->showMSRP = boolval(types_render_field('ski-show-msrp', array('output'=>'raw')));
         $this->msrpPrice = types_render_field('ski-msrp-price', array('output'=>'raw'));
         $this->paypalForm = types_render_field('ski-paypal-form', array('output'=>'row'));
+        $this->isBackordered = boolval(types_render_field('ski-is-backordered', array('output'=>'raw')));
+        $this->backorderMessage = types_render_field('ski-backorder-message', array('output'=>'raw'));
 
         $this->typeTagline = types_render_field('ski-type-tagline', array('output'=>'raw'));
         $this->displayLength = types_render_field('ski-display-length', array('output'=>'raw'));
