@@ -254,6 +254,21 @@ $ski = new Ski(); ?>
                         <h3>Reviews</h3>
                         <img class="img-responsive" src="<?= $ski->reviewsImage; ?>">
                     <?php endif; ?>
+                    <div class="visible-xs" data-fitvids-target>
+                        <?php if ($ski->showVimeoEmbed) : ?>
+                            <?= $ski->vimeoEmbed; ?>
+                        <?php endif; ?>
+                        <?php if ($ski->showAd) : ?>
+                            <?php if ($ski->adTitle) : ?>
+                                <h3><?= $ski->adTitle; ?></h3>
+                            <?php endif; ?>
+                            <div>
+                                <a href="<?= $ski->adLink; ?>">
+                                    <img class="img-responsive" src="<?= $ski->adImage; ?>">
+                                </a>
+                            </div>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </div>
