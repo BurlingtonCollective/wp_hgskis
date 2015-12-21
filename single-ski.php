@@ -1,39 +1,8 @@
 <?php
+include_once('models/ski.php');
 include_once('includes/header.php');
 if (have_posts()) : while (have_posts()) : the_post();
-    $ski = new stdObject();
-    $ski->name = get_the_title();
-    $ski->description = get_the_content();
-
-    $ski->logo = types_render_field('ski-logo', array('output'=>'raw'));
-    $ski->topSheetImage = types_render_field('ski-top-sheet-image', array('output'=>'raw'));
-    $ski->baseImage = types_render_field('ski-base-image', array('output'=>'raw'));
-    $ski->horzImage = types_render_field('ski-horz-image', array('output'=>'raw'));
-    $ski->showVimeoEmbed = types_render_field('ski-show-vimeo-embed', array('output'=>'raw'));
-    $ski->vimeoEmbed = types_render_field('ski-vimeo-embed', array('output'=>'raw'));
-
-    $ski->shipDateKnown = boolval(types_render_field('ski-ship-date-known', array('output'=>'raw')));
-    $ski->expectedShipDate = types_render_field('ski-expected-ship-date', array('style'=>'text', 'format'=>'F j'));
-    $ski->freeShipping = boolval(types_render_field('ski-free-shipping', array('output'=>'raw')));
-
-    $ski->currentPrice = types_render_field('ski-current-price', array('output'=>'raw'));
-    $ski->isPreorder = boolval(types_render_field('ski-is-preorder', array('output'=>'raw')));
-    $ski->showMSRP = boolval(types_render_field('ski-show-msrp', array('output'=>'raw')));
-    $ski->msrpPrice = types_render_field('ski-msrp-price', array('output'=>'raw'));
-    $ski->paypalForm = types_render_field('ski-paypal-form', array('output'=>'row'));
-
-    $ski->typeTagline = types_render_field('ski-type-typeline', array('output'=>'raw'));
-    $ski->displayLength = types_render_field('ski-display-length', array('output'=>'raw'));
-    $ski->showDimensions = boolval(types_render_field('ski-show-dimensions', array('output'=>'raw')));
-    $ski->skiDimensionsImage = types_render_field('ski-dimensions-image', array('output'=>'raw'));
-    $ski->showTechnologyPanel = boolval(types_render_field('ski-show-technology-panel', array('output'=>'raw')));
-    $ski->skowReviewsImage = boolval(types_render_field('ski-show-reviews-image', array('output'=>'raw')));
-    $ski->reviewsImage = types_render_field('ski-reviews-image', array('output'=>'raw'));
-
-    $ski->showAd = boolval(types_render_field('ski-show-ad', array('output'=>'raw')));
-    $ski->adImage = types_render_field('ski-ad-image', array('output'=>'raw'));
-    $ski->adLink = types_render_field('ski-ad-link', array('output'=>'raw'));
-?>
+$ski = new Ski(); ?>
 <section class="heading">
     <div class="container">
         <div class="row">
