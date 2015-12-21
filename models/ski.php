@@ -32,6 +32,7 @@ class Ski {
         $this->reviewsImage = types_render_field('ski-reviews-image', array('output'=>'raw'));
 
         $this->showAd = boolval(types_render_field('ski-show-ad', array('output'=>'raw')));
+        $this->adTitle = types_render_field('ski-ad-title', array('output'=>'raw'));
         $this->adImage = types_render_field('ski-ad-image', array('output'=>'raw'));
         $this->adLink = types_render_field('ski-ad-link', array('output'=>'raw'));
     }

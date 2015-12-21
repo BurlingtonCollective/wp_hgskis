@@ -31,6 +31,9 @@ $ski = new Ski(); ?>
                         <?= $ski->vimeoEmbed; ?>
                     <?php endif; ?>
                     <?php if ($ski->showAd) : ?>
+                        <?php if ($ski->adTitle) : ?>
+                            <h3><?= $ski->adTitle; ?></h3>
+                        <?php endif; ?>
                         <div>
                             <a href="<?= $ski->adLink; ?>">
                                 <img class="img-responsive" src="<?= $ski->adImage; ?>">
