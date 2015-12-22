@@ -3,8 +3,16 @@ section{
 		&.all-skis {
 			@media (min-width: @screen-md-min) {
 				.col-md-6 {
-					&:nth-child(odd) .wrapper {
-						padding-right: 50px;
+					.wrapper {
+						height: 185px;
+					}
+
+					&:nth-child(odd) {
+						clear: both;
+
+						.wrapper {
+							padding-right: 50px;
+						}
 					}
 
 					&:nth-child(even) .wrapper {
