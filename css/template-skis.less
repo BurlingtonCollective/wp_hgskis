@@ -1,5 +1,19 @@
 section{
 	&#product{
+		&.all-skis {
+			@media (min-width: @screen-md-min) {
+				.col-md-6 {
+					&:nth-child(odd) .wrapper {
+						padding-right: 50px;
+					}
+
+					&:nth-child(even) .wrapper {
+						padding-left: 50px;
+					}
+				}
+			}
+		}
+
 		.view-label{
 			text-align: center;
 			margin-top: 4px;

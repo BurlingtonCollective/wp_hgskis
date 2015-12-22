@@ -33,6 +33,7 @@ class Ski {
     public function __construct() {
         $this->name = get_the_title();
         $this->description = get_the_content();
+        $this->link = get_the_permalink();
 
         $this->logo = types_render_field('ski-logo', array('output'=>'raw'));
         $this->topSheetImage = types_render_field('ski-top-sheet-image', array('output'=>'raw'));
