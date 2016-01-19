@@ -172,7 +172,62 @@ if(have_posts()) : while(have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-8">
-				<p>As a small company we take warranties very seriously. We review all product issues on a case to case basis. Defects in materials or workmanship will be reviewed, fixed or replaced. Wear and tear is expected in our sport. We design skis to last for the practical lifetime of the product. For warranty issues or questions please email us at <a href="mailto:info@hgskis.com">info@hgskis.com</a>.</p>
+				<p>Thanks for your HG Skis purchase! HG Skis warranties are reserved for the original purchaser only.
+				Make sure to keep a copy of your original purchase receipt or invoice (Proof of Purchase), in the
+				unlikely event that you need warranty service. If the original Proof of Purchase cannot be provided on
+				a warranty return, HG will use the manufacturing date as the start of the warranty period. Repaired or
+				replaced skis are covered for the remainder of the original warranty only. Any skis deemed to fall under
+				warranty must be returned to HG Skis or destroyed in such a way which they cannot be used for skiing
+				before a replacement pair is shipped. In the event that HG determines to replace skis but does not have
+				replacement skis in stock to fulfill a valid warranty claim, the purchaser will be offered credit
+				towards a similarly priced model.</p>
+				<h3>HG Two Year Limited Warranty For Defects On Skis</h3>
+				<p>HG warrants this product to be free from defects in materials and workmanship for a period of two (2)
+				years from the original date of purchase at retail.</p>
+				<p>Items will be repaired or replaced if, upon inspection by HG Skis and agreed upon by an HG Skis
+				Representative, they are found to be defective in materials or workmanship.</p>
+				<p>WHAT IS COVERED
+					<ul>
+						<li>Structural cracks to the top sheet, base, core, edge, and sidewall due to a manufacturing defect.</li>
+						<li>Delaminating of top sheet, base, sidewall, edge, tip, and tail due to a manufacturing defect.</li>
+					</ul>
+				</p>
+				<p>WHAT IS NOT COVERED
+					<ul>
+						<li>Ski damage resulting from improper mounting of bindings, including the use of incorrect
+						mounting hardware, or base dimples in the base resulting from improper mounting.</li>
+						<li>Damage caused by any modifications made outside of the HG facility.</li>
+						<li>Cosmetic issues including top sheet dents or chips resulting from crossing your skis,
+						sun-faded graphics, and edge oxidation or rust.</li>
+					</ul>
+				</p>
+				<h3>HG Limited Warranty For "Terrain Park Use"</h3>
+				<p>Yes, you read that right. At HG Skis we’re focused on pushing the boundaries of skiing. How fair is
+				it when other ski manufacturers void your warranty because of a day in the park? HG warrants this
+				product to stand up to typical terrain park use for a period of 1 year from the original date of
+				purchase at retail. Customers who make a "terrain park use" warranty claim are responsible for any and
+				all shipping and handling or fees of any kind associated with a warranty claim.</p>
+				<p>Items will be repaired or replaced for a flat fee of $125 if, upon inspection by HG Skis and agreed
+				upon by an HG Skis Representative, they are found to be under warranty.</p>
+				<p>WHAT IS COVERED
+					<ul>
+						<li>Excessive structural cracks to the base, core, edge, and sidewall due typical use in a
+						terrain park.</li>
+					</ul>
+				</p>
+				<p>WHAT IS NOT COVERED
+					<ul>
+						<li>Any problem resulting from extreme impact, misuse, abuse, or neglect. This includes but is
+						not limited to throwing your skis in a fit of rage, driving over them with your car, or anything
+						else that doesn’t involve skiing.</li>
+						<li>Cosmetic issues including top sheet dents or chips resulting from crossing your skis,
+						sun-faded graphics, and edge oxidation or rust.</li>
+					</ul>
+				</p>
+				<h3>International Customers</h3>
+				<p>Any customers shipping skis outside of the US are responsible for any and all shipping and handling,
+				duties, taxes or fees of any kind associated with a warranty claim.</p>
+				<p>For questions, or to make a claim, please contact us at <a href="mailto:info@hgskis.com">info@hgskis.com</a></p>
 			</div>
 		</div>
 	</div>
