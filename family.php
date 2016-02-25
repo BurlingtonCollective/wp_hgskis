@@ -89,8 +89,8 @@ include_once('includes/header.php');
 		<div class="row">
 			<div class="col-xs-6 col-md-3">
 				<div class="member-wrapper">
-					<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/family/harrison-alt.png">
-					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/family/harrison.png">
+					<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/family/harrison-alt2.png">
+					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/family/harrison2.png">
 				</div>
 			</div>
 			<div class="col-xs-6 col-md-3">
