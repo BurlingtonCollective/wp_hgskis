@@ -9,7 +9,7 @@ include_once('includes/header.php');
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1>HG Skis 15/16 Arsenal</h1>
+                    <h1><span style="color: transparent;">Our Skis</span></h1>
                 </div>
             </div>
         </div>
