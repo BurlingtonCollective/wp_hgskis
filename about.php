@@ -209,7 +209,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 				it when other ski manufacturers void your warranty because of a day in the park? HG warrants this
 				product to stand up to typical terrain park use for a period of 1 year from the original date of
 				purchase at retail. Customers may use this warranty one time per initial purchase of a pair of skis.
-				Customers who make a "terrain park use" warranty claim are responsible for any and
+				Customers who make a "impact" warranty claim are responsible for any and
 				all shipping and handling or fees of any kind associated with a warranty claim.</p>
 				<p>Items will be repaired or replaced for a flat fee of $125 if, upon inspection by HG Skis and agreed
 				upon by an HG Skis Representative, they are found to be under warranty.</p>
