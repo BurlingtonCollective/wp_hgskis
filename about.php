@@ -181,6 +181,9 @@ if(have_posts()) : while(have_posts()) : the_post();
 				before a replacement pair is shipped. In the event that HG determines to replace skis but does not have
 				replacement skis in stock to fulfill a valid warranty claim, the purchaser will be offered credit
 				towards a similarly priced model.</p>
+				<div class="embed" data-fitvids-target>
+					<iframe src="https://player.vimeo.com/video/165238201?byline=0&portrait=0" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
 				<h3>HG Two Year Limited Warranty For Defects On Skis</h3>
 				<p>HG warrants this product to be free from defects in materials and workmanship for a period of two (2)
 				years from the original date of purchase at retail.</p>
@@ -201,11 +204,12 @@ if(have_posts()) : while(have_posts()) : the_post();
 						sun-faded graphics, and edge oxidation or rust.</li>
 					</ul>
 				</p>
-				<h3>HG Limited Warranty For "Terrain Park Use"</h3>
+				<h3>HG Limited Warranty For "Impact"</h3>
 				<p>Yes, you read that right. At HG Skis we’re focused on pushing the boundaries of skiing. How fair is
 				it when other ski manufacturers void your warranty because of a day in the park? HG warrants this
 				product to stand up to typical terrain park use for a period of 1 year from the original date of
-				purchase at retail. Customers who make a "terrain park use" warranty claim are responsible for any and
+				purchase at retail. Customers may use this warranty one time per initial purchase of a pair of skis.
+				Customers who make a "terrain park use" warranty claim are responsible for any and
 				all shipping and handling or fees of any kind associated with a warranty claim.</p>
 				<p>Items will be repaired or replaced for a flat fee of $125 if, upon inspection by HG Skis and agreed
 				upon by an HG Skis Representative, they are found to be under warranty.</p>
