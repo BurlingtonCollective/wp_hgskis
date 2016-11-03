@@ -169,6 +169,21 @@ if (have_posts()) : while (have_posts()) : the_post();
 		</div>
 	</div>
 </section>
+<?php
+$homeMountainImg = types_render_field('home-mountain', array('class'=>'img-responsive'));
+if ($homeMountainImg) : ?>
+	<section id="home-mountain">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+					<?php echo $homeMountainImg; ?>
+					<span class="home-mountain">Home Mountain of HG Skis</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<?php
+endif; ?>
 <section id="email-capture">
 	<div class="container">
 		<div class="row">
