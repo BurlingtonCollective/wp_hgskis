@@ -178,7 +178,7 @@ if ($homeMountainImg) : ?>
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 					<?php if ($homeMountainLink) : ?>
-						<a href="<?php echo $homeMountainLink; ?>">
+						<a href="<?php echo $homeMountainLink; ?>" target="_blank">
 							<?php echo $homeMountainImg; ?>
 						</a>
 					<?php else :
