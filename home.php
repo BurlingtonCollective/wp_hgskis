@@ -171,12 +171,19 @@ if (have_posts()) : while (have_posts()) : the_post();
 </section>
 <?php
 $homeMountainImg = types_render_field('home-mountain', array('class'=>'img-responsive'));
+$homeMountainLink = types_render_field('home-mountain-link', array('output'=>'raw'));
 if ($homeMountainImg) : ?>
 	<section id="home-mountain">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-					<?php echo $homeMountainImg; ?>
+					<?php if ($homeMountainLink) : ?>
+						<a href="<?php echo $homeMountainLink; ?>">
+							<?php echo $homeMountainImg; ?>
+						</a>
+					<?php else :
+						echo $homeMountainImg;
+					endif; ?>
 					<span class="home-mountain">Home Mountain of HG Skis</span>
 				</div>
 			</div>
