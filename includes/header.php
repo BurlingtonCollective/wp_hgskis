@@ -26,9 +26,13 @@
 			}
 		}
 	</style>
+	<?php wp_head(); ?>
 </head>
 <body>
-
+	<?php
+	if (shortcode_exists('wp_compact_cart')) {
+		echo do_shortcode('[wp_compact_cart]');
+	} ?>
 	<header>
 		<nav id="main-nav">
 			<a href="<?= get_home_url(); ?>" class="brand centered">
