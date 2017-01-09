@@ -6,7 +6,6 @@
 	<meta name="google-site-verification" content="-OkbFRgAssS60Y_iM7MI6w-IvcL4zEPhl8eIL1_Mouo" />
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Ek+Mukta:300,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/css/master.css">
 	<style>
 		#product.overview .wrapper-left {
 			padding-right: 50px;

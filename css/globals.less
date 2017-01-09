@@ -27,6 +27,68 @@ html{
 	}
 }
 
+.wpsps_compact_cart {
+	@padding: 12px;
+	@icon-size: 24px;
+	background: #fff;
+	position: fixed;
+	right: 6px;
+	z-index: 9999;
+	width: 120px;
+	padding: @padding + @icon-size @padding @padding;
+	max-width: none !important;
+	min-width: initial !important;
+	top: 98px;
+	margin: 0;
+	font-family: @font-family-base;
+
+	.wpsps_compact_cart_container {
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.wpsps_compact_cart_price {
+		display: block;
+	}
+
+	.wpsps_compact_cart_co_btn {
+		display: block;
+		margin: 6px 0 0 !important;
+		border: 1px solid #6A872D;
+		color: #6A872D !important;
+		background-color: #fff !important;
+	}
+
+	&:before {
+		content: ' ';
+		height: @icon-size;
+		width: @icon-size;
+		position: absolute;
+		top: @padding / 2;
+		left: 50%;
+		.translate(-50%, 0);
+		background: transparent url('../images/cart.png') center center no-repeat;
+	}
+}
+
+.shopping_cart {
+	font-family: @font-family-base;
+
+	h2 {
+		.h2();
+	}
+
+	table {
+		font-size: 16px;
+		border-spacing: 0 12px;
+		border-collapse: separate;
+	}
+
+	img {
+		display: none;
+	}
+}
+
 header{
 	@media(min-width: @grid-float-breakpoint){
 		position: relative;

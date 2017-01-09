@@ -18,6 +18,8 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+wp_enqueue_style('styles', get_template_directory_uri() . '/css/master.css', array('wspsc-style'));
+
 //custom post types
 // include('includes/custom-post-types.php');
 
