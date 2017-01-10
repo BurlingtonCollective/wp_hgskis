@@ -28,46 +28,42 @@ html{
 }
 
 .wpsps_compact_cart {
-	@padding: 12px;
-	@icon-size: 24px;
-	background: #fff;
-	position: fixed;
-	right: 6px;
-	z-index: 9999;
-	width: 120px;
-	padding: @padding + @icon-size @padding @padding;
+	@padding: 6px;
+	@icon-size: 18px;
+	background-color: #ffffff;
+	background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+	position: static;
+	padding: @padding;
 	max-width: none !important;
 	min-width: initial !important;
-	top: 98px;
 	margin: 0;
 	font-family: @font-family-base;
+	text-align: right;
 
 	.wpsps_compact_cart_container {
-		text-align: center;
-		padding-left: 0;
-	}
+		padding-left: @icon-size + @padding;
+		position: relative;
+		display: inline-block;
 
-	.wpsps_compact_cart_price {
-		display: block;
+		&:before {
+			content: ' ';
+			height: @icon-size;
+			width: @icon-size;
+			position: absolute;
+			top: 45%;
+			left: 0;
+			.translate(0, -50%);
+			background: transparent url('../images/cart.png') center center no-repeat;
+			background-size: @icon-size;
+		}
 	}
 
 	.wpsps_compact_cart_co_btn {
-		display: block;
-		margin: 6px 0 0 !important;
+		display: inline-block;
+		margin: 0 0 0 @padding !important;
 		border: 1px solid #6A872D;
 		color: #6A872D !important;
 		background-color: #fff !important;
-	}
-
-	&:before {
-		content: ' ';
-		height: @icon-size;
-		width: @icon-size;
-		position: absolute;
-		top: @padding / 2;
-		left: 50%;
-		.translate(-50%, 0);
-		background: transparent url('../images/cart.png') center center no-repeat;
 	}
 }
 
