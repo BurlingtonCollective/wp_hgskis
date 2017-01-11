@@ -1,0 +1,81 @@
+{
+    "key": "group_58755cc988635",
+    "title": "Company About Page Editor",
+    "fields": [
+        {
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "HG Skis\r\n70 S. Winooski Ave #194\r\nBurlington, VT 05401",
+            "delay": 0,
+            "key": "field_58755d094ee9d",
+            "label": "Contact Address",
+            "name": "company_contact_address",
+            "type": "wysiwyg",
+            "instructions": "use shift+enter to drop down to a new line without space between.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0,
+            "key": "field_58755ddf4ee9e",
+            "label": "History Copy",
+            "name": "company_history_copy",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0,
+            "key": "field_5875956e4ee9f",
+            "label": "Warranty Copy",
+            "name": "company_warranty_copy",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "about.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1484102049
+}

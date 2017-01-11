@@ -71,8 +71,8 @@
 					<li><a href="#about" class=""><span>About</span></a></li>
 					<li><a href="#contact" class=""><span>Contact</span></a></li>
 					<li><a href="#history" class=""><span>History</span></a></li>
-					<li><a href="#retailers" class=""><span>Retailers</span></a></li>
 					<li><a href="#warranty" class=""><span>Warranty</span></a></li>
+					<li><a href="#more" class=""><span>More</span></a></li>
 				</ul>
 			</div>
 		</nav>

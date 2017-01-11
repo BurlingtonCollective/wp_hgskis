@@ -54,11 +54,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 						<i class="glyphicon glyphicon-map-marker"></i>
 					</div>
 					<div class="content">
-						<ul class="address">
-							<li>HG Skis</li>
-							<li>70 S. Winooski Ave #194</li>
-							<li>Burlington, VT 05401</li>
-						</ul>
+						<?php the_field('company_contact_address'); ?>
 					</div>
 				</div>
 			</div>
@@ -86,6 +82,8 @@ if(have_posts()) : while(have_posts()) : the_post();
 		</div>
 	</div>
 </section>
+<?php
+if (get_field('company_history_copy')) : ?>
 <section id="history" class="heading" style="margin-top:10px;">
 	<div class="container">
 		<div class="row" class="page-heading">
@@ -101,62 +99,17 @@ if(have_posts()) : while(have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<p>
+				<div>
 					<img class="hidden-xs hidden-sm" src="<?= get_template_directory_uri(); ?>/images/history-polaroids/top-alt.png" style="float: right; margin: 0px -40px 0 0;"><img class="hidden-xs hidden-sm" src="<?= get_template_directory_uri(); ?>/images/history-polaroids/middle-alt.png" style="float: right; margin: 0px -40px 0 0;"><img class="hidden-xs hidden-sm" src="<?= get_template_directory_uri(); ?>/images/history-polaroids/bottom-alt.png" style="float: right; margin: 0px -40px 0 0;">
-					HG Skis is a freestyle ski company based in Burlington, VT. While we've been building and designing skis since 2006, the company was officially established in 2010. In the age of "locally grown products" and "micro-brew" ski companies, the east coast has been left without its own ski brand. As the only representatives of the east coast in the ski industry, we design, prototype, and manufacture product specifically for our terrain.<br><br>
-					In 2006 I began work on a senior project in high school. Over a five 
-					month process I built a ski press, a mold, and many of the 
-					specialized ski tools still used by the company today. 
-					Above all I built a pair of skis that I am still in love with.<br><br>
-					For my first two years of college I was in an out of other 
-					peoples' shop space. It was not until my go-to shop told me that I wasn’t allowed back that I decided to invest in my own machines, and start a ski company. During my third year of college I befriend Connor Gaeta. Connor originally started with me to develop our first twin tip, and function as a pro.<br><br>
-					Since then, Connor has developed into a major component of 
-					the company. The two of us are very different people, but we share one major thing in common. We are crazy about skiing, and want to bring innovation to the sport in anyway possible.<br><br>
-					Currently we work out of a garage in Burlington, Vermont. We live in your neighborhood, and we are building our favorite skis for you.<br><br>
-					<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/harrison-signature.png" style="max-width: 200px; margin-bottom: 20px;">
-					-Harrison G, founder of HG Skis
-				</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section id="retailers" class="heading" style="margin-top:10px;">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="page-heading">
-					<h1>Retailers</h1>
+					<?php the_field('company_history_copy'); ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="retailers">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-6 col-sm-3">
-				<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/board-barn.png">
-			</div>
-			<div class="col-xs-6 col-sm-3">
-				<h3>First Stop Board Barn</h3>
-				<ul class="address">
-					<li>8474 Rt. 4</li>
-					<li>Killington, VT USA 05751</li>
-				</ul>
-			</div>
-			<div class="col-xs-6 col-sm-3 next">
-				<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/alpine-shop.png">
-			</div>
-			<div class="col-xs-6 col-sm-3">
-				<h3>Alpine Shop</h3>
-				<ul class="address">
-					<li>1184 Williston Rd.</li>
-					<li>South Burlington, VT USA 05403</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
+<?php
+endif;
+if (get_field('company_warranty_copy')) : ?>
 <section id="warranty" class="heading" style="margin-top:10px;">
 	<div class="container">
 		<div class="row">
@@ -172,71 +125,41 @@ if(have_posts()) : while(have_posts()) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-8">
-				<p>Thanks for your HG Skis purchase! HG Skis warranties are reserved for the original purchaser only.
-				Make sure to keep a copy of your original purchase receipt or invoice (Proof of Purchase), in the
-				unlikely event that you need warranty service. If the original Proof of Purchase cannot be provided on
-				a warranty return, HG will use the manufacturing date as the start of the warranty period. Repaired or
-				replaced skis are covered for the remainder of the original warranty only. Any skis deemed to fall under
-				warranty must be returned to HG Skis or destroyed in such a way which they cannot be used for skiing
-				before a replacement pair is shipped. In the event that HG determines to replace skis but does not have
-				replacement skis in stock to fulfill a valid warranty claim, the purchaser will be offered credit
-				towards a similarly priced model.</p>
-				<div class="embed" data-fitvids-target>
-					<iframe src="https://player.vimeo.com/video/165238201?byline=0&portrait=0" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-				<h3>HG Two Year Limited Warranty For Defects On Skis</h3>
-				<p>HG warrants this product to be free from defects in materials and workmanship for a period of two (2)
-				years from the original date of purchase at retail.</p>
-				<p>Items will be repaired or replaced if, upon inspection by HG Skis and agreed upon by an HG Skis
-				Representative, they are found to be defective in materials or workmanship.</p>
-				<p>WHAT IS COVERED
-					<ul>
-						<li>Structural cracks to the top sheet, base, core, edge, and sidewall due to a manufacturing defect.</li>
-						<li>Delaminating of top sheet, base, sidewall, edge, tip, and tail due to a manufacturing defect.</li>
-					</ul>
-				</p>
-				<p>WHAT IS NOT COVERED
-					<ul>
-						<li>Ski damage resulting from improper mounting of bindings, including the use of incorrect
-						mounting hardware, or base dimples in the base resulting from improper mounting.</li>
-						<li>Damage caused by any modifications made outside of the HG facility.</li>
-						<li>Cosmetic issues including top sheet dents or chips resulting from crossing your skis,
-						sun-faded graphics, and edge oxidation or rust.</li>
-					</ul>
-				</p>
-				<h3>HG Limited Warranty For "Impact"</h3>
-				<p>Yes, you read that right. At HG Skis we’re focused on pushing the boundaries of skiing. How fair is
-				it when other ski manufacturers void your warranty because of a day in the park? HG warrants this
-				product to stand up to typical terrain park use for a period of 1 year from the original date of
-				purchase at retail. Customers may use this warranty one time per initial purchase of a pair of skis.
-				Customers who make an "impact" warranty claim are responsible for any and
-				all shipping and handling or fees of any kind associated with a warranty claim.</p>
-				<p>Items will be repaired or replaced for a flat fee of $125 if, upon inspection by HG Skis and agreed
-				upon by an HG Skis Representative, they are found to be under warranty.</p>
-				<p>WHAT IS COVERED
-					<ul>
-						<li>Excessive structural cracks to the base, core, edge, and sidewall due typical use in a
-						terrain park.</li>
-					</ul>
-				</p>
-				<p>WHAT IS NOT COVERED
-					<ul>
-						<li>Any problem resulting from extreme impact, misuse, abuse, or neglect. This includes but is
-						not limited to throwing your skis in a fit of rage, driving over them with your car, or anything
-						else that doesn’t involve skiing.</li>
-						<li>Cosmetic issues including top sheet dents or chips resulting from crossing your skis,
-						sun-faded graphics, and edge oxidation or rust.</li>
-					</ul>
-				</p>
-				<h3>International Customers</h3>
-				<p>Any customers shipping skis outside of the US are responsible for any and all shipping and handling,
-				duties, taxes or fees of any kind associated with a warranty claim.</p>
-				<p>For questions, or to make a claim, please contact us at <a href="mailto:info@hgskis.com">info@hgskis.com</a></p>
+				<?php the_field('company_warranty_copy'); ?>
 			</div>
 		</div>
 	</div>
 </section>
 <?php
+endif;
+if (have_rows('company_sections')) : foreach (get_field('company_sections') as $index => $section) :
+	if ($section['company_section_title']) : ?>
+		<section <?php echo $index === 0 ? 'id="more"' : ''; ?> class="heading" style="margin-top: 10px">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="page-heading">
+							<h1><?php echo $section['company_section_title']; ?></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<?php
+	endif;
+	if ($section['company_section_copy']) : ?>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8">
+						<?php echo $section['company_section_copy']; ?>
+					</div>
+				</div>
+			</div>
+		</section>
+		<?php
+	endif;
+endforeach; endif;
 endwhile; endif;
 include_once('includes/footer.php');
 ?>
