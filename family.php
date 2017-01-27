@@ -38,6 +38,10 @@ include_once('includes/header.php');
 				<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/family/christian-alt.png">
 				<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/family/christian.png">
 			</div>
+			<div class="member-wrapper">
+				<img class="img-responsive show-hover" src="<?= get_template_directory_uri(); ?>/images/family/keegan-alt.png">
+				<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/family/keegan.png">
+			</div>
 		</div>
 		<div class="row visible-xs visible-sm">
 			<div class="col-xs-6">
