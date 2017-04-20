@@ -1,5 +1,5 @@
 <?php
-	
+
 define('THEME_DIR', 'wp-content/themes/wp_hgskis_2013');
 
 register_nav_menus(array(
@@ -77,5 +77,3 @@ wp_enqueue_style('styles', get_template_directory_uri() . '/css/master.css', arr
 // loadMetaClass('PostMeta');
 // loadMetaClass('ProductMeta');
 // loadMetaClass('MemberMeta');
-
-?>

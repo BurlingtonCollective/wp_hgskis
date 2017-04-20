@@ -3,11 +3,6 @@
     "title": "Company About Page Editor",
     "fields": [
         {
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "default_value": "HG Skis\r\n70 S. Winooski Ave #194\r\nBurlington, VT 05401",
-            "delay": 0,
             "key": "field_58755d094ee9d",
             "label": "Contact Address",
             "name": "company_contact_address",
@@ -19,14 +14,14 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "HG Skis\r\n70 S. Winooski Ave #194\r\nBurlington, VT 05401",
+            "delay": 0
         },
         {
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "default_value": "",
-            "delay": 0,
             "key": "field_58755ddf4ee9e",
             "label": "History Copy",
             "name": "company_history_copy",
@@ -38,14 +33,14 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
-        },
-        {
+            },
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
             "default_value": "",
-            "delay": 0,
+            "delay": 0
+        },
+        {
             "key": "field_5875956e4ee9f",
             "label": "Warranty Copy",
             "name": "company_warranty_copy",
@@ -57,7 +52,12 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0
         }
     ],
     "location": [
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1484102049
+    "modified": 1492667365
 }

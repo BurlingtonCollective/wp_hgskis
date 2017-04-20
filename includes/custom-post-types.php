@@ -1,5 +1,42 @@
 <?php
 
+function video_post_type() {
+    $labels = array(
+        'name'               => _x('Videos', 'post type general name'),
+        'singular_name'      => _x('Video', 'post type singular name'),
+        'search_name'        => __('Video'),
+        'add_new'            => _x('Add New', 'video'),
+        'add_new_item'       => __('Add New Video'),
+        'edit_item'          => __('Edit Video'),
+        'new_item'           => __('New Video'),
+        'all_items'          => __('All Videos'),
+        'view_item'          => __('View Videos'),
+        'search_items'       => __('Search Videos'),
+        'not_found'          => __('No Videos found'),
+        'not_found_in_trash' => __('No Vidoes found in the Trash'),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Video'
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'description'        => 'HG Skis video productions.',
+        'public'             => true,
+        'publicly_queryable' => true,
+        'menu_position'      => 8,
+        'supports'           => array('title', 'editor', 'thumbnail'),
+        'has_archive'        => true,
+        'show_ui'            => true,
+        'capability_type'    => 'post',
+        'hierarchical'       => true,
+        'rewrite'            => array('slug' => 'video')
+    );
+
+    register_post_type('video', $args);
+}
+
+add_action('init', 'video_post_type');
+
 //post types
 function teamMember(){
 	$labels = array(
