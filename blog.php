@@ -3,14 +3,154 @@
 Template Name: Media Page
 */
 include_once('includes/header.php');
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
-?>
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 <section id="blog">
+	<section class="heading">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Films</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<div class="row">
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+		</div>
+		<div class="row" style="padding: 20px 0;">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+				<button class="btn btn-block btn-default" style="background: black; color: white; border: none; border-radius: 0;">Show All</button>
+			</div>
+		</div>
+	</div>
+	<section class="heading">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Edits</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<div class="row">
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+			<figure class="col-xs-6 col-md-3">
+				<a href="#">
+					<img class="img-responsive" src="http://placehold.it/640x360">
+				</a>
+				<h1 class="h5 text-center">The Title</h1>
+			</figure>
+		</div>
+		<div class="row" style="padding: 20px 0;">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+				<button class="btn btn-block btn-default" style="background: black; color: white; border: none; border-radius: 0;">Show All</button>
+			</div>
+		</div>
+	</div>
+	<section class="heading" style="margin: 40px 0;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Blog</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-8">
 				<?php
+				$media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 				if($media->have_posts()): while($media->have_posts()): $media->the_post();
 				global $more;
 				$more = 0;
@@ -24,7 +164,7 @@ $media = new WP_Query(array('posts_per_page'=>5,'paged'=>$paged));
 					</div>
 					<div class="content">
 						<div class="wysiwyg-content">
-							<?php 
+							<?php
 							// $content = apply_filters( 'the_content', get_the_content() );
 							// $content = str_replace( ']]>', ']]&gt;', $content );
 							// $startPosition = strripos($content,'</p>');
