@@ -1,0 +1,42 @@
+#template-guts {
+  @white: #fff;
+  @black: #000;
+  @border-width: 6px;
+
+  .nav-rad {
+    border: @border-width solid @white;
+
+    .nav-stacked {
+      border: @border-width solid @black;
+      background: @black;
+
+      > li {
+        > a {
+          background: @white;
+          color: @black;
+          font-size: 12px;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 10px;
+
+          &:hover, &:active, &:focus {
+            color: @white;
+            background: @black;
+          }
+        }
+
+        + li {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+
+  .campaign-logo-wrapper {
+    .translate(0, -60px);
+
+    img {
+      .rotate(-4deg);
+    }
+  }
+}
