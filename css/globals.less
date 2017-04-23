@@ -1,6 +1,7 @@
 html{
 	background: @darkest-gray;
 	height: 100%;
+
 	body{
 		background: @background;
 		position: relative;
@@ -11,10 +12,16 @@ html{
 		background-image: url(http://www.transparenttextures.com/patterns/az-subtle.png);
 		background-color: @body-color;
 		background-image: url(../images/clean-gray-paper.png);
+
 		footer{
 			position: absolute;
 			bottom: 0;
 			width: 100%;
+		}
+
+		&.guts-landing {
+			background: @body-color url('../images/guts/bg.jpg') center top no-repeat;
+			background-size: cover;
 		}
 	}
 }

@@ -1,0 +1,114 @@
+#template-guts {
+  @white: #fff;
+  @black: #000;
+  @border-width: 6px;
+  .bebas-stack();
+  color: @white;
+
+  .heading {
+    font-size: 32px;
+    letter-spacing: 6px;
+    .opacity(.8);
+  }
+
+  .nav-rad {
+    border: @border-width solid @white;
+    max-width: 215px;
+
+    .nav-stacked {
+      border: @border-width solid @black;
+      background: @black;
+
+      > li {
+        > a {
+          background: @white;
+          color: @black;
+          font-size: 18px;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 10px;
+          letter-spacing: 4px;
+
+          &:hover, &:active, &:focus {
+            color: @white;
+            background: @black;
+          }
+        }
+
+        + li {
+          margin-top: 6px;
+        }
+
+        &:first-child a {
+          &, &:hover, &:active, &:focus {
+            background: @white;
+            color: @black;
+          }
+        }
+      }
+    }
+  }
+
+  .campaign-logo-wrapper {
+    .translate(0, -60px);
+
+    img {
+      .rotate(-4deg);
+    }
+
+    + .heading {
+      margin-top: -80px;
+      margin-bottom: 90px;
+    }
+  }
+
+  .trailer-placeholder {
+    max-width: 680px;
+    width: 80%;
+    margin-bottom: 80px;
+  }
+
+  .supported-by-cta {
+    max-width: 250px;
+    display: block;
+    margin: 60px auto;
+  }
+
+  .arts-riot-cta, .title-logo-wrapper, .title-logo-wrapper + .heading {
+    position: relative;
+    z-index: 100;
+  }
+
+  .title-logo-wrapper {
+    z-index: 98;
+    top: -40px;
+    margin-bottom: -168px;
+    .rotate(-8deg);
+
+    + .heading {
+      z-index: 99;
+      margin-bottom: 48px;
+    }
+  }
+
+  .col-insta {
+    margin-bottom: @grid-gutter-width;
+  }
+
+  .btn-guts {
+    border: @border-width solid @white;
+    padding: 0;
+    border-radius: 0;
+    margin-top: 48px;
+
+    span {
+      display: inline-block;
+      border: @border-width solid @black;
+      background: transparent;
+      color: @black;
+      font-size: 32px;
+      padding: 0 16px;
+      letter-spacing: 8px;
+    }
+  }
+}
