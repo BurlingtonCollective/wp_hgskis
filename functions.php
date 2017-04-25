@@ -1,10 +1,11 @@
 <?php
-	
+
 define('THEME_DIR', 'wp-content/themes/wp_hgskis_2013');
 
 register_nav_menus(array(
 	'main_nav_left' => 'Main Navigation Menu (left)',
-	'main_nav_right' => 'Main Navigation Menu (right)'
+	'main_nav_right' => 'Main Navigation Menu (right)',
+	'guts_nav' => 'Guts Landing Navigation 2017'
 ));
 
 add_theme_support('post-thumbnails', array('post', 'page', 'team_member', 'product'));
@@ -19,6 +20,24 @@ function new_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 wp_enqueue_style('styles', get_template_directory_uri() . '/css/master.css', array('wspsc-style'));
+
+function get_nav_menu($target) {
+    $menus = wp_get_nav_menus();
+    $menu_locations = get_nav_menu_locations();
+
+    if (isset($menu_locations[$target])) {
+        foreach ($menus as $menu) {
+            if ($menu->term_id == $menu_locations[$target]) {
+                return array (
+                    'object' => wp_get_nav_menu_object($menu_locations[$target]),
+                    'items' => wp_get_nav_menu_items($menu)
+                );
+            }
+        }
+    }
+
+    return;
+}
 
 //custom post types
 // include('includes/custom-post-types.php');
