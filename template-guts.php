@@ -35,15 +35,9 @@ function getThemeImg ($path)
                 <h2 class="text-center heading">#EATTHEGUTS</h2>
             </div>
             <?php
-            if (have_rows('instagram_embeds')) : ?>
+            if (get_field('instagram_feed')) : ?>
                 <div class="col-sm-10 col-sm-offset-1">
-                    <div class="row">
-                        <?php foreach (get_field('instagram_embeds') as $media) : ?>
-                            <div class="col-md-3 col-insta">
-                                <?php echo $media['embed']; ?>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
+                    <?php the_field('instagram_feed'); ?>
                 </div>
                 <?php
             endif;
