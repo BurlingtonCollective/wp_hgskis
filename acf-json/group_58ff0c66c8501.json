@@ -52,10 +52,10 @@
         },
         {
             "key": "field_58ff0cea0ee97",
-            "label": "Instagram Embeds",
-            "name": "instagram_embeds",
-            "type": "repeater",
-            "instructions": "",
+            "label": "Instagram Feed",
+            "name": "instagram_feed",
+            "type": "wysiwyg",
+            "instructions": "example [instawp hashtag=”HashTag” count=”16″ header=”true” columns=”4″]",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -63,32 +63,11 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "table",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_58ff0d2a0ee98",
-                    "label": "Embed",
-                    "name": "embed",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "text",
-                    "toolbar": "basic",
-                    "media_upload": 0,
-                    "delay": 0
-                }
-            ]
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
         },
         {
             "key": "field_58ff0f122b8de",
@@ -124,5 +103,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1493110564
+    "modified": 1493486227
 }
