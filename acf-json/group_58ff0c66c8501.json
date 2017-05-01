@@ -1,0 +1,107 @@
+{
+    "key": "group_58ff0c66c8501",
+    "title": "Guts Landing Page Options",
+    "fields": [
+        {
+            "key": "field_58ff0c7d0ee94",
+            "label": "Ski Sale Link",
+            "name": "ski_sale_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58ff0cb20ee95",
+            "label": "Arts Riot Ticket Link",
+            "name": "arts_riot_ticket_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58ff0ccd0ee96",
+            "label": "Tall T Link",
+            "name": "tall_t_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58ff0cea0ee97",
+            "label": "Instagram Feed",
+            "name": "instagram_feed",
+            "type": "wysiwyg",
+            "instructions": "example [instawp hashtag=”HashTag” count=”16″ header=”true” columns=”4″]",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_58ff0f122b8de",
+            "label": "'More Guts' Link",
+            "name": "more_guts_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-guts.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1493486227
+}
