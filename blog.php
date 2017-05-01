@@ -3,140 +3,75 @@
 Template Name: Media Page
 */
 include_once('includes/header.php');
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$videoCategories = get_terms('video-category');
+global $post; setup_postdata($post); ?>
 <section id="blog">
-	<section class="heading">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1>Films</h1>
+	<?php
+	if ($paged === 1) : foreach ($videoCategories as $category) :
+		$chunks = get_posts(array(
+			'post_type' => 'video',
+			'posts_per_page' => -1,
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'video-category',
+					'field' => 'slug',
+					'terms' => $category->slug
+				)
+			)
+		));
+		if ($chunks) : ?>
+			<section class="heading">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h1><?php echo $category->name; ?></h1>
+						</div>
+					</div>
 				</div>
+			</section>
+			<div class="container">
+				<?php
+				$collapse = false;
+				foreach ($chunks as $rowCount => $row) :
+					if ($rowCount === 2) :
+						$collapse = true; ?>
+						<div id="<?php echo $category->slug; ?>-collapse" class="collapse">
+						<?php
+					endif; ?>
+					<div class="row">
+						<?php foreach ($row as $post) : setup_postdata($post); ?>
+							<div class="col-xs-6 col-md-3 col-video">
+								<a href="<?php the_permalink(); ?>">
+									<img class="img-responsive" src="<?php the_field('video-thumbnail'); ?>">
+								</a>
+								<h1 class="h5 text-center">
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								</h1>
+							</div>
+						<?php endforeach; ?>
+					</div>
+					<?php
+					if ($collapse && count($chunks) === $rowCount + 1) : ?>
+						</div>
+						<div class="row" style="padding: 20px 0;">
+							<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+								<button class="btn btn-block btn-default"
+										style="background: black; color: white; border: none; border-radius: 0;"
+										data-toggle="collapse"
+										data-target="#<?php echo $category->slug; ?>-collapse">
+									Show All
+								</button>
+							</div>
+						</div>
+						<?php
+					endif;
+				endforeach; ?>
 			</div>
-		</div>
-	</section>
-	<div class="container">
-		<div class="row">
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-		</div>
-		<div class="row" style="padding: 20px 0;">
-			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-				<button class="btn btn-block btn-default" style="background: black; color: white; border: none; border-radius: 0;">Show All</button>
-			</div>
-		</div>
-	</div>
-	<section class="heading">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1>Edits</h1>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="container">
-		<div class="row">
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-			<figure class="col-xs-6 col-md-3">
-				<a href="#">
-					<img class="img-responsive" src="http://placehold.it/640x360">
-				</a>
-				<h1 class="h5 text-center">The Title</h1>
-			</figure>
-		</div>
-		<div class="row" style="padding: 20px 0;">
-			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-				<button class="btn btn-block btn-default" style="background: black; color: white; border: none; border-radius: 0;">Show All</button>
-			</div>
-		</div>
-	</div>
+			<?php
+		endif;
+	endforeach; endif;
+	wp_reset_postdata(); ?>
 	<section class="heading" style="margin: 40px 0;">
 		<div class="container">
 			<div class="row">
