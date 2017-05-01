@@ -96,5 +96,3 @@ function get_nav_menu($target) {
 // loadMetaClass('PostMeta');
 // loadMetaClass('ProductMeta');
 // loadMetaClass('MemberMeta');
-
-?>
