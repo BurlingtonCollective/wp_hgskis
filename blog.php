@@ -12,6 +12,7 @@ global $post; setup_postdata($post); ?>
 		$chunks = array_chunk(get_posts(array(
 			'post_type' => 'video',
 			'posts_per_page' => -1,
+			'post_status' => 'publish',
 			'tax_query' => array(
 				array(
 					'taxonomy' => 'video-category',
@@ -19,7 +20,7 @@ global $post; setup_postdata($post); ?>
 					'terms' => $category->slug
 				)
 			)
-		)), 3);
+		)), 4);
 		if ($chunks) : ?>
 			<section class="heading">
 				<div class="container">
