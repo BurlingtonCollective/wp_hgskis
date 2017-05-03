@@ -9,7 +9,7 @@ global $post; setup_postdata($post); ?>
 <section id="blog">
 	<?php
 	if ($paged === 1) : foreach ($videoCategories as $category) :
-		$chunks = get_posts(array(
+		$chunks = array_chunk(get_posts(array(
 			'post_type' => 'video',
 			'posts_per_page' => -1,
 			'tax_query' => array(
@@ -19,7 +19,7 @@ global $post; setup_postdata($post); ?>
 					'terms' => $category->slug
 				)
 			)
-		));
+		)), 3);
 		if ($chunks) : ?>
 			<section class="heading">
 				<div class="container">
