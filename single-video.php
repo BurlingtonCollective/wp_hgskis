@@ -11,8 +11,10 @@ global $post; setup_postdata($post); ?>
 						<span class="date"><?php the_date(); ?></span>
 					</div>
 					<div class="content">
-						<div class="wysiwyg-content" data-fitfids-target>
+						<div class="embed" data-fitvids-target>
 							<?php the_field('video-embed'); ?>
+						</div>
+						<div class="wysiwyg-content">
 							<?php the_content(); ?>
 						</div>
 					</div>
