@@ -55,7 +55,7 @@ function getThemeImg ($path)
                     <nav class="nav-rad">
                         <ul class="nav nav-stacked">
                             <li>
-                                <a href="#">
+                                <a href="http://hgskis.com">
                                     <img class="img-responsive" src="<?php echo getThemeImg('/logo-black-no-fill.svg'); ?>">
                                 </a>
                             </li>
@@ -66,13 +66,13 @@ function getThemeImg ($path)
                                 <?php
                             endforeach; endif; ?>
                             <li>
-                                <a href="#">
+                                <a href="https://www.facebook.com/hgskis" target="_blank">
                                     <img src="<?php echo getThemeImg('/fb-black.png'); ?>">
                                     <img class="rollover" src="<?php echo getThemeImg('/fb-white.png'); ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.instagram.com/hgskis/" target="_blank">
                                     <img src="<?php echo getThemeImg('/insta-black.png'); ?>">
                                     <img class="rollover" src="<?php echo getThemeImg('/insta-inverse.png'); ?>">
                                 </a>
