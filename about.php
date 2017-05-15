@@ -65,7 +65,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 						<img class="img-responsive" src="<?= get_template_directory_uri(); ?>/images/social/email-dark.png">
 					</div>
 					<div class="content">
-						<a href="mailto:info@hgskis.com">info@hgskis.com</a>
+						<a href="https://goo.gl/forms/oo2It2FIGJXaGZj52">Contact Us</a>
 					</div>
 				</div>
 			</div>

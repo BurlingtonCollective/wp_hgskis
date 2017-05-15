@@ -73,102 +73,13 @@ if (have_posts()) : while (have_posts()) : the_post();
 	  </a>
 	</div>
 </section>
-<section id="home-featured">
+<!-- <section id="home-featured">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-6">
-				<div class="featured-block left">
-					<h3>Featured Products<!-- <small class="pull-right"><a href="javascript:void(0)">view all products</a></small> --></h3>
-					<div class="row">
-						<div class="col-xs-6">
-							<?php
-							$featSlot1Link = types_render_field('slot-1-link', array('output'=>'raw'));
-							$featSlot1Img = types_render_field('slot-1-image', array('class'=>'img-responsive'));
-							if($featSlot1Link){
-								if(strpos($featSlot1Link, 'hgskis.com') === false){
-									$external = true;
-								}else{
-									$external = false;
-								}
-							}
-							$featSlot1Rollover = types_render_field('slot-1-rollover', array('class'=>'img-responsive show-hover'));
-							?>
-							<div class="feature-wrapper">
-								<a href="<?= $featSlot1Link; ?>" <?= $external ? 'target="_blank"' : ''; ?>>
-									<?php echo $featSlot1Img; echo $featSlot1Rollover; ?>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-6">
-							<?php
-							$featSlot2Link = types_render_field('slot-2-link', array('output'=>'raw'));
-							$featSlot2Img = types_render_field('slot-2-image', array('class'=>'img-responsive'));
-							if($featSlot2Link){
-								if(strpos($featSlot2Link, 'hgskis.com') === false){
-									$external = true;
-								}else{
-									$external = false;
-								}
-							}
-							$featSlot2Rollover = types_render_field('slot-2-rollover', array('class'=>'img-responsive show-hover'));
-							?>
-							<div class="feature-wrapper">
-								<a href="<?= $featSlot2Link; ?>" <?= $external ? 'target="_blank"' : ''; ?>>
-									<?php echo $featSlot2Img; echo $featSlot2Rollover; ?>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-6">
-				<div class="featured-block right">
-					<h3>Latest News<!-- <small class="pull-right"><a href="javascript:void(0)">view all news</a></small> --></h3>
-					<div class="row">
-						<div class="col-xs-6">
-							<?php
-							$newsSlot1Link = types_render_field('slot-1-link-news', array('output'=>'raw'));
-							$newsSlot1Img = types_render_field('slot-1-image-news', array('class'=>'img-responsive'));
-							if($newsSlot1Link){
-								if(strpos($newsSlot1Link, 'hgskis.com') === false){
-									$external = true;
-								}else{
-									$external = false;
-								}
-							}
-							$newsSlot1Rollover = types_render_field('slot-1-rollover-news', array('class'=>'img-responsive show-hover'));
-							?>
-							<div class="feature-wrapper">
-								<a href="<?= $newsSlot1Link; ?>" <?= $external ? 'target="_blank"' : ''; ?>>
-									<?php echo $newsSlot1Img; echo $newsSlot1Rollover; ?>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-6">
-							<?php
-							$newsSlot2Link = types_render_field('slot-2-link-news', array('output'=>'raw'));
-							$newsSlot2Img = types_render_field('slot-2-image-news', array('class'=>'img-responsive'));
-							if($newsSlot2Link){
-								if(strpos($newsSlot2Link, 'hgskis.com') === false){
-									$external = true;
-								}else{
-									$external = false;
-								}
-							}
-							$newsSlot2Rollover = types_render_field('slot-2-rollover-news', array('class'=>'img-responsive show-hover'));
-							?>
-							<div class="feature-wrapper">
-								<a href="<?= $newsSlot2Link; ?>" <?= $external ? 'target="_blank"' : ''; ?>>
-									<?php echo $newsSlot2Img; echo $newsSlot2Rollover; ?>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</div>
-</section>
+</section> -->
 <?php
 $homeMountainImg = types_render_field('home-mountain', array('class'=>'img-responsive'));
 $homeMountainLink = types_render_field('home-mountain-link', array('output'=>'raw'));

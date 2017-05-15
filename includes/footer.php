@@ -6,7 +6,7 @@
 				<div class="inner contact">
 					<span>70 S. Winooski Ave #194</span>
 					<span>Burlington, VT 05401</span>
-					<a href="mailto:info@hgskis.com">info@hgskis.com</a>
+					<a href="https://goo.gl/forms/oo2It2FIGJXaGZj52" target="_blank">Contact Us</a>
 				</div>
 			</div>
 			<div class="col-xs-6 col-md-4">
