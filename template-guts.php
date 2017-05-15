@@ -23,9 +23,16 @@ function getThemeImg ($path)
                 <a href="<?php echo the_field('ski_sale_link'); ?>" class="ski-sale-cta">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/skis-sale-eat-the-guts.png'); ?>">
                 </a>
-                <a href="<?php echo the_field('tall_t_link'); ?>" class="supported-by-cta">
-                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/supported-by.png'); ?>">
-                </a>
+                <?php if (have_rows('guts_logos')) : ?>
+                    <h2 class="text-center heading support">Supported By</h2>
+                    <div class="text-center logo-container">
+                        <?php foreach (get_field('guts_logos') as $logo) : ?>
+                            <a href="<?php echo $logo['guts_logo_link']; ?>" class="logo-link">
+                                <img src="<?php echo $logo['guts_logo_image']; ?>">
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
                 <a href="<?php echo the_field('arts_riot_ticket_link'); ?>" class="arts-riot-cta">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/arts-riot-eat-the-guts.png'); ?>">
                 </a>
@@ -38,15 +45,6 @@ function getThemeImg ($path)
             if (get_field('instagram_feed')) : ?>
                 <div class="col-sm-10 col-sm-offset-1">
                     <?php the_field('instagram_feed'); ?>
-                </div>
-                <?php
-            endif;
-            if (get_field('more_guts_link')) : ?>
-                <div class="col-xs-12 text-center">
-                    <a href="<?php the_field('more_guts_link'); ?>"
-                       class="btn btn-default btn-guts more-cta">
-                      <span>More Guts</span>
-                    </a>
                 </div>
                 <?php
             endif; ?>

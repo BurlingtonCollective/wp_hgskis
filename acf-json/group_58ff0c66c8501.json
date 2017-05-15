@@ -35,10 +35,10 @@
             "placeholder": ""
         },
         {
-            "key": "field_58ff0ccd0ee96",
-            "label": "Tall T Link",
-            "name": "tall_t_link",
-            "type": "url",
+            "key": "field_5919611d0d771",
+            "label": "Logos",
+            "name": "guts_logos",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -47,8 +47,53 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": ""
+            "collapsed": "field_591961850d773",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Logo",
+            "sub_fields": [
+                {
+                    "key": "field_591961630d772",
+                    "label": "Logo Link",
+                    "name": "guts_logo_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_591961850d773",
+                    "label": "Logo Image",
+                    "name": "guts_logo_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
         },
         {
             "key": "field_58ff0cea0ee97",
@@ -68,22 +113,6 @@
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0
-        },
-        {
-            "key": "field_58ff0f122b8de",
-            "label": "'More Guts' Link",
-            "name": "more_guts_link",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
         }
     ],
     "location": [
@@ -103,5 +132,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1493486227
+    "modified": 1494835720
 }
