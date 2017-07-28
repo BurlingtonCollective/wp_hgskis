@@ -9,6 +9,3 @@
 	<?php wp_head(); ?>
 </head>
 <body class="guts-landing">
-	<header>
-
-	</header>
