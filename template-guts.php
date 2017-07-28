@@ -19,7 +19,13 @@ function getThemeImg ($path)
                     <img class="img-responsive" src="<?php echo getThemeImg('/guts-logo.png'); ?>" alt="Eat The Guts Campaign Logo">
                 </div>
                 <h2 class="text-center heading">A Video By HG Skis</h2>
-                <img class="center-block img-responsive trailer-placeholder" src="<?php echo getThemeImg('/trailer-placeholder.jpg'); ?>">
+                <?php if (get_field('guts_trailer_embed')) : ?>
+                    <div class="wysiwyg-content" data-fitfids-target>
+                        <?php the_field('guts_trailer_embed'); ?>
+                    </div>
+                <?php else: ?>
+                    <img class="center-block img-responsive trailer-placeholder" src="<?php echo getThemeImg('/trailer-placeholder.jpg'); ?>">
+                <?php endif; ?>
                 <a href="<?php echo the_field('ski_sale_link'); ?>" class="ski-sale-cta">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/skis-sale-eat-the-guts.png'); ?>">
                 </a>
