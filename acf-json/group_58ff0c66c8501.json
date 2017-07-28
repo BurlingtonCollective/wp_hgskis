@@ -3,6 +3,8 @@
     "title": "Guts Landing Page Options",
     "fields": [
         {
+            "default_value": "",
+            "placeholder": "",
             "key": "field_58ff0c7d0ee94",
             "label": "Ski Sale Link",
             "name": "ski_sale_link",
@@ -14,11 +16,30 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
+            }
         },
         {
+            "tabs": "text",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "",
+            "delay": 0,
+            "key": "field_597b54e38add6",
+            "label": "Trailer Embed",
+            "name": "guts_trailer_embed",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
             "key": "field_58ff0cb20ee95",
             "label": "Arts Riot Ticket Link",
             "name": "arts_riot_ticket_link",
@@ -30,30 +51,13 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
+            }
         },
         {
-            "key": "field_5919611d0d771",
-            "label": "Logos",
-            "name": "guts_logos",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "field_591961850d773",
-            "min": 0,
-            "max": 0,
-            "layout": "block",
-            "button_label": "Add Logo",
             "sub_fields": [
                 {
+                    "default_value": "",
+                    "placeholder": "",
                     "key": "field_591961630d772",
                     "label": "Logo Link",
                     "name": "guts_logo_link",
@@ -65,23 +69,9 @@
                         "width": "",
                         "class": "",
                         "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": ""
+                    }
                 },
                 {
-                    "key": "field_591961850d773",
-                    "label": "Logo Image",
-                    "name": "guts_logo_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
                     "return_format": "url",
                     "preview_size": "thumbnail",
                     "library": "all",
@@ -91,28 +81,57 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "key": "field_591961850d773",
+                    "label": "Logo Image",
+                    "name": "guts_logo_image",
+                    "type": "image",
+                    "instructions": "Should be 300 px tall for consistency and look.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
                 }
-            ]
-        },
-        {
-            "key": "field_58ff0cea0ee97",
-            "label": "Instagram Feed",
-            "name": "instagram_feed",
-            "type": "wysiwyg",
-            "instructions": "example [instawp hashtag=”HashTag” count=”16″ header=”true” columns=”4″]",
+            ],
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Logo",
+            "collapsed": "field_591961850d773",
+            "key": "field_5919611d0d771",
+            "label": "Logos",
+            "name": "guts_logos",
+            "type": "repeater",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
-            },
-            "default_value": "",
+            }
+        },
+        {
             "tabs": "all",
             "toolbar": "basic",
             "media_upload": 0,
-            "delay": 0
+            "default_value": "",
+            "delay": 0,
+            "key": "field_58ff0cea0ee97",
+            "label": "Instagram Feed",
+            "name": "instagram_feed",
+            "type": "wysiwyg",
+            "instructions": "example [instawp hashtag=\u201dHashTag\u201d count=\u201d16\u2033 header=\u201dtrue\u201d columns=\u201d4\u2033]",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
         }
     ],
     "location": [
@@ -132,5 +151,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1494835720
+    "modified": 1501255127
 }
