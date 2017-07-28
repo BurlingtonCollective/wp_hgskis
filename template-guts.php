@@ -20,7 +20,7 @@ function getThemeImg ($path)
                 </div>
                 <h2 class="text-center heading">A Video By HG Skis</h2>
                 <?php if (get_field('guts_trailer_embed')) : ?>
-                    <div class="wysiwyg-content" data-fitfids-target>
+                    <div class="wysiwyg-content" data-fitvids-target>
                         <?php the_field('guts_trailer_embed'); ?>
                     </div>
                 <?php else: ?>

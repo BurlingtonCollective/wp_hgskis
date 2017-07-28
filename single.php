@@ -16,7 +16,7 @@ include_once('includes/header.php');
 						<span class="date"><?php the_date(); ?></span>
 					</div>
 					<div class="content">
-						<div class="wysiwyg-content" data-fitfids-target>
+						<div class="wysiwyg-content" data-fitvids-target>
 							<?php the_content(); ?>
 						</div>
 						<!-- <a href="<?php the_permalink(); ?>">read more ...</a> -->
