@@ -16,6 +16,7 @@ $(function(){
 	}
 
 	if($('[data-fitvids-target]').length > 0){
+		console.log('here');
 		$('[data-fitvids-target]').fitVids();
 	}
 
