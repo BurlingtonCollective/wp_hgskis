@@ -39,8 +39,8 @@ function getThemeImg ($path)
                         <?php endforeach; ?>
                     </div>
                 <?php endif; ?>
-                <a href="<?php echo the_field('arts_riot_ticket_link'); ?>" class="arts-riot-cta">
-                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/arts-riot-eat-the-guts.png'); ?>">
+                <a href="<?php echo the_field('arts_riot_ticket_link'); ?>" class="arts-riot-cta" title="HG Skis at Arts Riot October 13th, 2017">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/arts-riot-eat-the-guts.png'); ?>" alt="HG Skis at Arts Riot October 13th, 2017">
                 </a>
                 <div class="title-logo-wrapper">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/eat-the-guts-by-hg-skis.png'); ?>">
