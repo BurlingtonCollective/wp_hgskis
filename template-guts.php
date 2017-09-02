@@ -33,24 +33,24 @@ function getThemeImg ($path)
                     <h2 class="text-center heading support">Presented By</h2>
                     <div class="text-center logo-container">
                         <a href="http://hgskis.com/" class="logo-link" target="_blank">
-                            <img src="<?= getThemeImg('guts/updated/hg.png') ?>">
+                            <img src="<?= getThemeImg('/updated/hg.png') ?>">
                         </a>
                         <a href="https://www.talltproductions.com/" class="logo-link" target="_blank">
-                            <img src="<?= getThemeImg('guts/updated/tall-t.png') ?>">
+                            <img src="<?= getThemeImg('/updated/tall-t.png') ?>">
                         </a>
                     </div>
                 <?php endif; ?>
                 <a href="http://www.highfive-festival.com/en/" class="arts-riot-cta" title="HG Skis at High Five Festival October 6-8th, 2017" target="_blank">
-                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/guts/updated/high-five.png'); ?>" alt="HG Skis at High Five Festival October 6-8th, 2017">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/high-five.png'); ?>" alt="HG Skis at High Five Festival October 6-8th, 2017">
                 </a>
                 <a href="http://firstchairfestival.com/" class="arts-riot-cta" title="HG Skis at First Chair Festival October 7th, 2017" target="_blank">
-                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/guts/updated/first-chair.png'); ?>" alt="HG Skis at First Chair Festival October 7th, 2017">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/first-chair.png'); ?>" alt="HG Skis at First Chair Festival October 7th, 2017">
                 </a>
                 <a href="<?php echo the_field('arts_riot_ticket_link'); ?>" class="arts-riot-cta" title="HG Skis at Arts Riot October 13th, 2017" target="_blank">
-                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/guts/updated/arts-riot.png'); ?>" alt="HG Skis at Arts Riot October 13th, 2017">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/arts-riot.png'); ?>" alt="HG Skis at Arts Riot October 13th, 2017">
                 </a>
                 <a href="http://if3festival.com/" class="arts-riot-cta" title="HG Skis at IF3 Festival October 26-29th, 2017" target="_blank">
-                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/guts/updated/if3.png'); ?>" alt="HG Skis at IF3 Festival October 26-29th, 2017">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/if3.png'); ?>" alt="HG Skis at IF3 Festival October 26-29th, 2017">
                 </a>
                 <?php if (have_rows('guts_logos')) : ?>
                     <h2 class="text-center heading support">Supported By</h2>
