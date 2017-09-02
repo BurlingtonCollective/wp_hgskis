@@ -40,17 +40,20 @@ function getThemeImg ($path)
                         </a>
                     </div>
                 <?php endif; ?>
-                <a href="http://www.highfive-festival.com/en/" class="arts-riot-cta" title="HG Skis at High Five Festival October 6-8th, 2017" target="_blank">
+                <a href="http://www.highfive-festival.com/en/" class="arts-riot-cta" title="HG Skis at High Five Festival October 6-8th, 2017" target="_blank" style="display: block; margin-bottom: 40px;">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/high-five.png'); ?>" alt="HG Skis at High Five Festival October 6-8th, 2017">
                 </a>
-                <a href="http://firstchairfestival.com/" class="arts-riot-cta" title="HG Skis at First Chair Festival October 7th, 2017" target="_blank">
+                <a href="http://firstchairfestival.com/" class="arts-riot-cta" title="HG Skis at First Chair Festival October 7th, 2017" target="_blank" style="display: block; margin-bottom: 40px;">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/first-chair.png'); ?>" alt="HG Skis at First Chair Festival October 7th, 2017">
                 </a>
-                <a href="<?php echo the_field('arts_riot_ticket_link'); ?>" class="arts-riot-cta" title="HG Skis at Arts Riot October 13th, 2017" target="_blank">
+                <a href="<?php echo the_field('arts_riot_ticket_link'); ?>" class="arts-riot-cta" title="HG Skis at Arts Riot October 13th, 2017" target="_blank" style="display: block; margin-bottom: 40px;">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/arts-riot.png'); ?>" alt="HG Skis at Arts Riot October 13th, 2017">
                 </a>
-                <a href="http://if3festival.com/" class="arts-riot-cta" title="HG Skis at IF3 Festival October 26-29th, 2017" target="_blank">
+                <a href="http://if3festival.com/" class="arts-riot-cta" title="HG Skis at IF3 Festival October 26-29th, 2017" target="_blank" style="display: block; margin-bottom: 40px;">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/if3.png'); ?>" alt="HG Skis at IF3 Festival October 26-29th, 2017">
+                </a>
+                <a href="mailto:info@hgskis.com" target="_blank" title="Host a Premiere">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/host-premiere-btn.png'); ?>" alt="Host a Premiere">
                 </a>
                 <?php if (have_rows('guts_logos')) : ?>
                     <h2 class="text-center heading support">Supported By</h2>
