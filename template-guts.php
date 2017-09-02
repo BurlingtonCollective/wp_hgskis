@@ -40,6 +40,7 @@ function getThemeImg ($path)
                         </a>
                     </div>
                 <?php endif; ?>
+                <img class="img-responsive center-block" src="<?= getThemeImg('/updated/spacer.png'); ?>">
                 <a href="http://www.highfive-festival.com/en/" class="arts-riot-cta" title="HG Skis at High Five Festival October 6-8th, 2017" target="_blank" style="display: block; margin-bottom: 40px;">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/high-five.png'); ?>" alt="HG Skis at High Five Festival October 6-8th, 2017">
                 </a>
@@ -55,6 +56,7 @@ function getThemeImg ($path)
                 <a href="mailto:info@hgskis.com" target="_blank" title="Host a Premiere">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/host-premiere-btn.png'); ?>" alt="Host a Premiere" width="320">
                 </a>
+                <img class="img-responsive center-block" src="<?= getThemeImg('/updated/spacer.png'); ?>">
                 <?php if (have_rows('guts_logos')) : ?>
                     <h2 class="text-center heading support">Supported By</h2>
                     <div class="text-center logo-container">
@@ -65,6 +67,7 @@ function getThemeImg ($path)
                         <?php endforeach; ?>
                     </div>
                 <?php endif; ?>
+                <img class="img-responsive center-block" src="<?= getThemeImg('/updated/spacer.png'); ?>">
                 <div class="title-logo-wrapper">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/eat-the-guts-by-hg-skis.png'); ?>">
                 </div>
