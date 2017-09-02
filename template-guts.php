@@ -30,18 +30,38 @@ function getThemeImg ($path)
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/skis-sale-eat-the-guts.png'); ?>">
                 </a>
                 <?php if (have_rows('guts_logos')) : ?>
+                    <h2 class="text-center heading support">Presented By</h2>
+                    <div class="text-center logo-container">
+                        <a href="http://hgskis.com/" class="logo-link" target="_blank">
+                            <img src="<?= getThemeImg('guts/updated/hg.png') ?>">
+                        </a>
+                        <a href="https://www.talltproductions.com/" class="logo-link" target="_blank">
+                            <img src="<?= getThemeImg('guts/updated/tall-t.png') ?>">
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <a href="http://www.highfive-festival.com/en/" class="arts-riot-cta" title="HG Skis at High Five Festival October 6-8th, 2017" target="_blank">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/guts/updated/high-five.png'); ?>" alt="HG Skis at High Five Festival October 6-8th, 2017">
+                </a>
+                <a href="http://firstchairfestival.com/" class="arts-riot-cta" title="HG Skis at First Chair Festival October 7th, 2017" target="_blank">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/guts/updated/first-chair.png'); ?>" alt="HG Skis at First Chair Festival October 7th, 2017">
+                </a>
+                <a href="<?php echo the_field('arts_riot_ticket_link'); ?>" class="arts-riot-cta" title="HG Skis at Arts Riot October 13th, 2017" target="_blank">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/guts/updated/arts-riot.png'); ?>" alt="HG Skis at Arts Riot October 13th, 2017">
+                </a>
+                <a href="http://if3festival.com/" class="arts-riot-cta" title="HG Skis at IF3 Festival October 26-29th, 2017" target="_blank">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/guts/updated/if3.png'); ?>" alt="HG Skis at IF3 Festival October 26-29th, 2017">
+                </a>
+                <?php if (have_rows('guts_logos')) : ?>
                     <h2 class="text-center heading support">Supported By</h2>
                     <div class="text-center logo-container">
                         <?php foreach (get_field('guts_logos') as $logo) : ?>
-                            <a href="<?php echo $logo['guts_logo_link']; ?>" class="logo-link">
+                            <a href="<?php echo $logo['guts_logo_link']; ?>" class="logo-link" target="_blank">
                                 <img src="<?php echo $logo['guts_logo_image']; ?>">
                             </a>
                         <?php endforeach; ?>
                     </div>
                 <?php endif; ?>
-                <a href="<?php echo the_field('arts_riot_ticket_link'); ?>" class="arts-riot-cta" title="HG Skis at Arts Riot October 13th, 2017">
-                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/arts-riot-eat-the-guts.png'); ?>" alt="HG Skis at Arts Riot October 13th, 2017">
-                </a>
                 <div class="title-logo-wrapper">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/eat-the-guts-by-hg-skis.png'); ?>">
                 </div>
@@ -88,6 +108,6 @@ function getThemeImg ($path)
         </div>
     </div>
 </main>
-<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+<!--<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>-->
 <?php
 get_footer('guts'); ?>
