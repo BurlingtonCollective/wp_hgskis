@@ -40,7 +40,7 @@ function getThemeImg ($path)
                         </a>
                     </div>
                 <?php endif; ?>
-                <img class="img-responsive center-block" src="<?= getThemeImg('/updated/spacer.png'); ?>">
+                <img id="premieres" class="img-responsive center-block" src="<?= getThemeImg('/updated/spacer.png'); ?>">
                 <a href="http://www.highfive-festival.com/en/" class="arts-riot-cta" title="HG Skis at High Five Festival October 6-8th, 2017" target="_blank" style="display: block; margin-bottom: 40px;">
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/high-five.png'); ?>" alt="HG Skis at High Five Festival October 6-8th, 2017">
                 </a>
