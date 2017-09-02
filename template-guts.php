@@ -53,13 +53,13 @@ function getThemeImg ($path)
                     <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/if3.png'); ?>" alt="HG Skis at IF3 Festival October 26-29th, 2017">
                 </a>
                 <a href="mailto:info@hgskis.com" target="_blank" title="Host a Premiere">
-                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/host-premiere-btn.png'); ?>" alt="Host a Premiere">
+                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/updated/host-premiere-btn.png'); ?>" alt="Host a Premiere" width="320">
                 </a>
                 <?php if (have_rows('guts_logos')) : ?>
                     <h2 class="text-center heading support">Supported By</h2>
                     <div class="text-center logo-container">
-                        <?php foreach (get_field('guts_logos') as $logo) : ?>
-                            <a href="<?php echo $logo['guts_logo_link']; ?>" class="logo-link" target="_blank">
+                        <?php foreach (get_field('guts_logos') as $index => $logo) : ?>
+                            <a href="<?php echo $logo['guts_logo_link']; ?>" class="logo-link" target="_blank" <?= $index == 2 ? 'style="display: block;"' : ''; ?>>
                                 <img src="<?php echo $logo['guts_logo_image']; ?>">
                             </a>
                         <?php endforeach; ?>
