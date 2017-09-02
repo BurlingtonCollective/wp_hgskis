@@ -31,12 +31,12 @@ function getThemeImg ($path)
                 </a>
                 <?php if (have_rows('guts_logos')) : ?>
                     <h2 class="text-center heading support">Presented By</h2>
-                    <div class="text-center logo-container">
+                    <div class="text-center logo-container" style="margin-bottom: 0;">
                         <a href="http://hgskis.com/" class="logo-link" target="_blank">
-                            <img src="<?= getThemeImg('/updated/hg.png') ?>">
+                            <img src="<?= getThemeImg('/updated/hg.png') ?>" style="margin-bottom: 0;">
                         </a>
                         <a href="https://www.talltproductions.com/" class="logo-link" target="_blank">
-                            <img src="<?= getThemeImg('/updated/tall-t.png') ?>">
+                            <img src="<?= getThemeImg('/updated/tall-t.png') ?>" style="margin-bottom: 0;">
                         </a>
                     </div>
                 <?php endif; ?>
@@ -58,7 +58,7 @@ function getThemeImg ($path)
                 </a>
                 <img class="img-responsive center-block" src="<?= getThemeImg('/updated/spacer.png'); ?>">
                 <?php if (have_rows('guts_logos')) : ?>
-                    <h2 class="text-center heading support">Supported By</h2>
+                    <h2 class="text-center heading support" style="margin-top: 0;">Supported By</h2>
                     <div class="text-center logo-container">
                         <?php foreach (get_field('guts_logos') as $index => $logo) : ?>
                             <a href="<?php echo $logo['guts_logo_link']; ?>" class="logo-link" target="_blank" <?= $index == 2 ? 'style="display: block;"' : ''; ?>>
