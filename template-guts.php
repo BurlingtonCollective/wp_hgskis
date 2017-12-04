@@ -26,8 +26,8 @@ function getThemeImg ($path)
                 <?php else: ?>
                     <img class="center-block img-responsive trailer-placeholder" src="<?php echo getThemeImg('/trailer-placeholder.jpg'); ?>">
                 <?php endif; ?>
-                <a href="<?php echo the_field('ski_sale_link'); ?>" class="ski-sale-cta">
-                    <img class="img-responsive center-block" src="<?php echo getThemeImg('/skis-sale-eat-the-guts.png'); ?>">
+                <a href="<?php the_field('ski_sale_link'); ?>" class="ski-sale-cta">
+                    <img class="img-responsive center-block" src="<?php the_field('ski_sale_image'); ?>">
                 </a>
                 <?php if (have_rows('guts_logos')) : ?>
                     <h2 class="text-center heading support">Presented By</h2>
