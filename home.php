@@ -81,7 +81,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 	</div>
 </section> -->
 <?php
-$homeMountainImg = types_render_field('home-mountain', array('class'=>'img-responsive'));
+$homeMountainImg = types_render_field('home-mountain', array('class'=>'img-responsive', 'style' => 'max-width: 200px; margin: 0 auto;'));
 $homeMountainLink = types_render_field('home-mountain-link', array('output'=>'raw'));
 if ($homeMountainImg) : ?>
 	<section id="home-mountain">
